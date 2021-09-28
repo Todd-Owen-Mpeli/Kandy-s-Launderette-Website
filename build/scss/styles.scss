@@ -50,6 +50,7 @@ p {
 /*===== NAVIGATION MENU =====*/
 .header {
 	padding: 1rem;
+
 	.nav {
 		margin: auto;
 		align-items: center;
@@ -70,17 +71,19 @@ p {
 		}
 
 		.nav__menu {
+			display: flex;
+			padding: 0rem;
+
 			ul {
 				display: flex;
 				margin: auto;
-				justify-self: end;
-				list-style-type: none;
+				padding: 0rem;
+				list-style: none;
 			}
 
 			li {
 				margin: 0 0.5rem;
 				padding: 0.25rem;
-				width: fit-content;
 				text-align: center;
 			}
 		}
