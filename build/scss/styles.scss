@@ -50,13 +50,11 @@ p {
 /*===== NAVIGATION MENU =====*/
 .header {
 	padding: 1rem;
-	border: #7a42fc 0.25rem solid;
 
 	.nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		border: #7a42fc 0.25rem solid;
 
 		.nav_Logo {
 			.logoImage {
@@ -75,7 +73,6 @@ p {
 				display: flex;
 				justify-self: end;
 				list-style-type: none;
-				border: #7a42fc 0.25rem solid;
 			}
 
 			li {
