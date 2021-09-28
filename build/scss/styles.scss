@@ -50,9 +50,9 @@ p {
 /*===== NAVIGATION MENU =====*/
 .header {
 	padding: 1rem;
-
+	border: #fbb040 0.25rem solid;
 	.nav {
-		display: flex;
+		margin: auto;
 		align-items: center;
 		justify-content: space-between;
 
@@ -66,13 +66,16 @@ p {
 
 			a:hover {
 				transition: all 0.25s ease-in-out;
-				transform: scale(1.02);
+				color: $secondary_pinkRed;
 			}
 		}
 
 		.nav__menu {
+			border: #fbb040 0.25rem solid;
+
 			ul {
 				display: flex;
+				margin: auto;
 				justify-self: end;
 				list-style-type: none;
 			}
@@ -90,9 +93,11 @@ p {
 		text-decoration: none;
 		color: $baseColor_black;
 		font-size: $fontSize_small;
+		font-family: $fontStyle_body;
 	}
 
 	a:hover {
+		transition: all 0.25s ease-in-out;
 		color: $secondary_pinkRed;
 	}
 }
@@ -116,8 +121,8 @@ p {
 
 	.container {
 		// border: #ff9900 0.25rem solid;
-		padding: 0;
-		margin: 0 auto;
+		padding: auto;
+		margin: auto;
 		overflow: auto;
 
 		.footer_Logo {
@@ -125,17 +130,18 @@ p {
 
 			li {
 				list-style: none;
-				a {
-					.logoImage {
-						width: 40%;
-						height: 50px;
-						text-align: left;
-					}
 
-					.logoImage:hover {
-						transition: all 0.25s ease-in-out;
-						transform: scale(1.025);
-					}
+				a {
+					font-weight: 600;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_body;
+					text-decoration: none;
+					color: $baseColor_white;
+				}
+
+				a:hover {
+					transition: all 0.25s ease-in-out;
+					color: $secondary_pinkRed;
 				}
 			}
 		}
@@ -162,34 +168,37 @@ p {
 			margin-top: 2rem;
 
 			div {
-				display: flex;
 				align-self: center;
-				// border: #692bfa 0.25rem solid;
 
 				h2 {
-					text-align: left;
+					padding: 1rem;
+					text-align: center;
 					color: $baseColor_white;
 					font-size: $fontSize_small;
-					font-family: $fontStyle_header;
+					font-family: $fontStyle_body;
 				}
 
 				ul {
-					// border: #692bfa 0.25rem solid;
+					display: flex;
 					list-style: none;
-				}
+					margin: auto;
+					padding: 0rem 1rem;
+					justify-self: end;
 
-				li {
-					margin: 0 0.75rem;
+					li {
+						margin: auto;
 
-					a {
-						text-decoration: none;
-						color: $baseColor_white;
-						font-size: $fontSize_large;
-						// border: #ff0099 0.25rem solid;
-					}
+						a {
+							text-decoration: none;
+							color: $baseColor_white;
+							font-size: $fontSize_normal;
+							font-family: $fontStyle_body;
+						}
 
-					a:hover {
-						color: $secondary_pinkRed;
+						a:hover {
+							transition: all 0.25s ease-in-out;
+							color: $secondary_pinkRed;
+						}
 					}
 				}
 			}
