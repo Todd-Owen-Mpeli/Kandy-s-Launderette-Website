@@ -57,12 +57,14 @@ p {
 		justify-content: space-between;
 
 		.nav_Logo {
-			.logoImage {
-				width: 25%;
-				height: 40px;
+			a {
+				font-weight: 600;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_body;
+				text-decoration: none;
 			}
 
-			.logoImage:hover {
+			a:hover {
 				transition: all 0.25s ease-in-out;
 				transform: scale(1.02);
 			}
