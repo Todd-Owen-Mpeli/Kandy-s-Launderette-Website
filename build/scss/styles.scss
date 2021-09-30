@@ -123,8 +123,9 @@ p {
 			margin: auto;
 
 			img {
-				height: 300px;
+				height: auto;
 				width: 350px;
+				max-width: 100%;
 			}
 
 			h2 {
@@ -147,13 +148,46 @@ p {
 		}
 	}
 }
+/* ===== ABOUT US =====*/
+.aboutUs {
+	margin: auto;
+	padding: 3rem 0;
+
+	.contentTop {
+		margin: auto;
+		padding: 1rem;
+
+		div {
+			margin: 0 1rem;
+			h5 {
+				text-align: left;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_option1;
+				color: $baseColor_black;
+			}
+
+			h2 {
+				text-align: left;
+				font-size: $fontSize_large;
+				font-family: $fontStyle_option2;
+				color: $baseColor_black;
+			}
+
+			p {
+				margin-top: 2rem;
+				text-align: left;
+				font-weight: 200;
+
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_option2;
+				color: $baseColor_black;
+			}
+		}
+	}
+}
 
 /* ===== SERVICES =====*/
 .services {
-}
-
-/* ===== ABOUT US =====*/
-.about-us {
 }
 
 /* ===== FOOTER =====*/
