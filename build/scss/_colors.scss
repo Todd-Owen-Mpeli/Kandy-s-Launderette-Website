@@ -13,6 +13,7 @@ $secondary_yellow: #fbcf40;
 $secondary_orange: #fbb040;
 $secondary_pinkRed: #ff0099;
 $secondary_pinkPurple: #cc00ff;
+$secondary_pinkPurple1: #ee87f7;
 
 // Additional Colours
 $AdditionalColor_Purple1: #7a42fc;
@@ -20,4 +21,27 @@ $AdditionalColor_darkPurple: #692bfa;
 $AdditionalColor-darkPurple2: #5d18ff;
 $AdditionalColor-lightGrey: #8d8d8d;
 $AdditionalColor-darkOrange: #ff9900;
-$AdditionalColor-whiteDouble: rgba(255, 255, 255, 0.795);
+$AdditionalColor-whiteDouble: rgba(255, 255, 255, 0.933);
+
+// Background image Variable
+$backgroundGradient: linear-gradient(
+	-45deg,
+	#ff0099,
+	#f360b8,
+	#d565fa,
+	#ee87f7,
+	#ee5eb5
+);
+
+/* Featured Projects background colour change */
+@keyframes heroGradientKeyframes {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
+} ;

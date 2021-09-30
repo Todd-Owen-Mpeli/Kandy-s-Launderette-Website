@@ -104,6 +104,39 @@ p {
 
 /* ===== HERO =====*/
 .hero {
+	background: $backgroundGradient;
+	background-size: 1200% 600%;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: heroGradientKeyframes 20s ease-in-out infinite;
+
+	.content {
+		padding: 1rem;
+		div {
+			margin: auto;
+
+			img {
+				width: 100%;
+			}
+
+			h2 {
+				text-align: center;
+				word-spacing: 0.25rem;
+				letter-spacing: 0.1rem;
+				text-transform: uppercase;
+				font-size: $fontSize_XL-large;
+				font-family: $fontStyle_option3;
+				color: $AdditionalColor-whiteDouble;
+			}
+
+			p {
+				text-align: center;
+				font-size: $fontSize_large;
+				font-family: $fontStyle_option2;
+				color: $AdditionalColor-whiteDouble;
+			}
+		}
+	}
 }
 
 /* ===== SERVICES =====*/
@@ -163,7 +196,7 @@ p {
 
 						a:hover {
 							transition: all 0.25s ease-in-out;
-							color: $AdditionalColor-Purple1;
+							color: $secondary_pinkPurple1;
 						}
 					}
 				}
