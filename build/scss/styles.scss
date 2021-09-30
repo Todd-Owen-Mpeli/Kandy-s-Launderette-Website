@@ -31,37 +31,36 @@ img {
 
 a {
 	text-decoration: none;
-	font-family: $fontStyle_header;
 }
 
 h2 h5 {
 	color: $baseColor_black;
-	font-size: $fontSize_large;
-	font-family: $fontStyle_header;
 }
 
 p {
 	line-height: 1.25em;
-	color: $baseColor_black;
-	font-size: $fontSize_large;
-	font-family: $fontStyle_header;
 }
 
 /*===== NAVIGATION MENU =====*/
 .header {
+	margin: auto;
 	padding: 1rem;
+	border: #5936f3 0.25rem solid;
 
 	.nav {
 		margin: auto;
+		padding: 0rem;
 		align-items: center;
-		justify-content: space-between;
 
 		.nav_Logo {
 			a {
 				font-weight: 600;
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_body;
+				word-spacing: 0.25rem;
 				text-decoration: none;
+				color: $baseColor_black;
+				letter-spacing: 0.025rem;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_option3;
 			}
 
 			a:hover {
@@ -71,34 +70,34 @@ p {
 		}
 
 		.nav__menu {
-			display: flex;
 			padding: 0rem;
 
 			ul {
-				display: flex;
 				margin: auto;
 				padding: 0rem;
 				list-style: none;
-			}
+				text-align: right;
 
-			li {
-				margin: 0 0.5rem;
-				padding: 0.25rem;
-				text-align: center;
+				li {
+					.uil {
+						display: none;
+					}
+
+					a {
+						text-decoration: none;
+						color: $baseColor_black;
+						text-transform: uppercase;
+						font-size: $fontSize_small;
+						font-family: $fontStyle_option3;
+					}
+
+					a:hover {
+						transition: all 0.25s ease-in-out;
+						color: $secondary_pinkRed;
+					}
+				}
 			}
 		}
-	}
-
-	a {
-		text-decoration: none;
-		color: $baseColor_black;
-		font-size: $fontSize_small;
-		font-family: $fontStyle_body;
-	}
-
-	a:hover {
-		transition: all 0.25s ease-in-out;
-		color: $secondary_pinkRed;
 	}
 }
 
@@ -111,12 +110,15 @@ p {
 	animation: heroGradientKeyframes 20s ease-in-out infinite;
 
 	.content {
+		margin: auto;
 		padding: 1rem;
+
 		div {
 			margin: auto;
 
 			img {
-				width: 100%;
+				height: 300px;
+				width: 350px;
 			}
 
 			h2 {
@@ -131,7 +133,8 @@ p {
 
 			p {
 				text-align: center;
-				font-size: $fontSize_large;
+				font-weight: 200;
+				font-size: $fontSize_normal;
 				font-family: $fontStyle_option2;
 				color: $AdditionalColor-whiteDouble;
 			}
