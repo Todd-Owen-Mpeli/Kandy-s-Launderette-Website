@@ -152,6 +152,7 @@ p {
 .aboutUs {
 	margin: auto;
 	padding: 3rem 0;
+	border: #f360b8 0.25rem solid;
 
 	.contentTop {
 		margin: auto;
@@ -192,6 +193,9 @@ p {
 	}
 
 	.content {
+		margin: auto;
+		padding: 1rem;
+
 		h2 {
 			text-align: left;
 			font-size: $fontSize_large;
@@ -212,6 +216,56 @@ p {
 
 /* ===== SERVICES =====*/
 .services {
+	border: #fbb040 0.25rem solid;
+	height: 20rem;
+}
+
+/* ===== ABOUT US =====*/
+.whyChooseUs {
+	margin: auto;
+	padding: 1rem 0;
+	border: #fbb040 0.25rem solid;
+
+	.contentTop {
+		margin: auto;
+		padding: 1rem;
+
+		h1 {
+			text-align: center;
+			font-size: $fontSize_large-0;
+			font-family: $fontStyle_option3;
+			color: $baseColor_black;
+		}
+
+		.gridContent {
+			display: grid;
+			margin-top: 5rem;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			grid-gap: 1rem;
+			margin: 0 1rem;
+
+			div {
+				padding: 1rem;
+
+				h2 {
+					text-align: left;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option2;
+					color: $baseColor_black;
+				}
+
+				p {
+					margin-top: 1rem;
+					text-align: left;
+					font-weight: 200;
+					font-size: $fontSize_small;
+					font-family: $fontStyle_option2;
+					color: $baseColor_black;
+				}
+			}
+		}
+	}
 }
 
 /* ===== FOOTER =====*/
