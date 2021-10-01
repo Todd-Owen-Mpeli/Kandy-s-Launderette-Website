@@ -117,7 +117,7 @@ p {
 	.content {
 		margin: auto;
 		padding: 1rem;
-		height: 40rem;
+		height: 25rem;
 
 		div {
 			margin: auto;
@@ -159,6 +159,13 @@ p {
 
 		div {
 			margin: 0 1rem;
+
+			img {
+				height: auto;
+				width: 100%;
+				max-width: 100%;
+			}
+
 			h5 {
 				text-align: left;
 				font-size: $fontSize_normal;
@@ -177,11 +184,28 @@ p {
 				margin-top: 2rem;
 				text-align: left;
 				font-weight: 200;
-
 				font-size: $fontSize_normal;
 				font-family: $fontStyle_option2;
 				color: $baseColor_black;
 			}
+		}
+	}
+
+	.content {
+		h2 {
+			text-align: left;
+			font-size: $fontSize_large;
+			font-family: $fontStyle_option2;
+			color: $baseColor_black;
+		}
+
+		p {
+			margin-top: 0.5rem;
+			text-align: left;
+			font-weight: 200;
+			font-size: $fontSize_normal;
+			font-family: $fontStyle_option2;
+			color: $baseColor_black;
 		}
 	}
 }
