@@ -434,9 +434,10 @@ p {
 			}
 		}
 
-		.inStoregOption {
+		.inStoregOptionBtn {
 			padding: 1rem;
-			margin-bottom: 2rem;
+			width: fit-content;
+			border: #692bfa 0.25rem solid;
 
 			h2 {
 				text-align: left;
@@ -465,20 +466,87 @@ p {
 				transition: all 0.25s ease-in-out;
 				background-color: $AdditionalColor_Purple1;
 			}
+		}
 
-			.row {
+		.inStoregOption {
+			padding: 1.5rem;
+			border: #692bfa 0.25rem solid;
+
+			h2 {
+				text-align: left;
+				color: $baseColor_white;
+				font-size: $fontSize_large;
+				font-family: $fontStyle_option1;
+			}
+
+			.info {
 				display: grid;
-				margin-top: 1.5rem;
 				grid-template-columns: repeat(3, 1fr);
 				grid-template-rows: 1fr;
-				grid-column-gap: 2rem;
-				grid-row-gap: 1rem;
+				grid-gap: 2rem;
 
-				.col {
+				div {
+					padding: 1.5rem;
+					border-radius: 10px;
 					background-color: $baseColor_lightBlack;
 
+					h2 {
+						text-align: left;
+						letter-spacing: 0.15rem;
+						font-size: $fontSize_large-1;
+						font-family: $fontStyle_option1;
+						color: $baseColor_white;
+					}
+
+					h5 {
+						text-align: left;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option1;
+						color: $AdditionalColor-lightGrey;
+					}
+
 					.ss {
-						margin-bottom: 2rem;
+						margin-bottom: 3rem;
+					}
+
+					p {
+						margin-top: 1rem;
+						text-align: left;
+						font-weight: 200;
+						text-transform: capitalize;
+						font-size: $fontSize_small;
+						font-family: $fontStyle_option2;
+						color: $AdditionalColor-lightGrey;
+					}
+
+					li {
+						list-style: none;
+						margin-top: 2rem;
+
+						a {
+							text-decoration: none;
+							font-size: $fontSize_normal;
+							font-family: $fontStyle_option1;
+							color: $baseColor_white;
+						}
+
+						.bi {
+							align-items: center;
+							margin-left: 0.25rem;
+						}
+					}
+
+					li:hover {
+						a,
+						.bi {
+							transition: all 0.25s ease-in-out;
+							color: $AdditionalColor-whiteDouble;
+						}
+
+						.bi {
+							transition: all 0.25s ease-in-out;
+							margin-left: 0.65rem;
+						}
 					}
 				}
 			}
