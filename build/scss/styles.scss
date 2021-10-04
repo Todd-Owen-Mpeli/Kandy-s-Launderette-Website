@@ -488,6 +488,16 @@ p {
 			}
 		}
 	}
+
+	@media only screen and (max-width: 767px) {
+		.content {
+			.row {
+				div {
+					margin-bottom: 1.5rem;
+				}
+			}
+		}
+	}
 }
 
 /* ===== Image Section =====*/
