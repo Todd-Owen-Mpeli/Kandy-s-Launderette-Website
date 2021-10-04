@@ -491,7 +491,7 @@ p {
 				div {
 					padding: 1.5rem;
 					border-radius: 10px;
-					background-color: $baseColor_lightBlack;
+					background-color: $AdditionalColor_Purple1;
 
 					h2 {
 						text-align: left;
@@ -505,7 +505,7 @@ p {
 						text-align: left;
 						font-size: $fontSize_normal;
 						font-family: $fontStyle_option1;
-						color: $AdditionalColor-lightGrey;
+						color: $baseColor_white;
 					}
 
 					.ss {
@@ -519,7 +519,7 @@ p {
 						text-transform: capitalize;
 						font-size: $fontSize_small;
 						font-family: $fontStyle_option2;
-						color: $AdditionalColor-lightGrey;
+						color: $baseColor_white;
 					}
 
 					li {
