@@ -217,8 +217,10 @@ p {
 
 /* ===== SERVICES =====*/
 .services {
-	border: #fbb040 0.25rem solid;
-	height: 20rem;
+	border: #f360b8 0.25rem solid;
+	.content {
+		height: 350px;
+	}
 }
 
 /* ===== ABOUT US =====*/
@@ -280,6 +282,102 @@ p {
 				}
 			}
 		}
+	}
+}
+
+/* ===== SERVICES =====*/
+.pricingOption {
+	padding: 1rem;
+	background-color: $backgroundColor_lightBlack;
+
+	.content {
+		// height: 50rem;
+		padding: 2rem 1rem;
+		border: #7a42fc 0.25rem solid;
+
+		.row {
+			div {
+				padding: 2rem;
+				margin: 0 1rem;
+				border-radius: 10px;
+				// border: #ee87f7 0.25rem solid;
+				background-color: $backgroundColor_black;
+
+				.fas {
+					margin-right: 0.35rem;
+				}
+
+				h2 {
+					text-align: left;
+					letter-spacing: 0.15rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_option1;
+					color: $baseColor_white;
+				}
+
+				h5 {
+					text-align: left;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option1;
+					color: $AdditionalColor-lightGrey;
+				}
+
+				p {
+					margin-top: 1rem;
+					text-align: left;
+					font-weight: 200;
+					font-size: $fontSize_small;
+					font-family: $fontStyle_option2;
+					color: $AdditionalColor-lightGrey;
+				}
+
+				button {
+					padding: 1rem;
+					border: none;
+					border-radius: 5px;
+					color: $baseColor_white;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option1;
+					background-color: $secondary_pinkRed;
+				}
+
+				button:hover {
+					transition: all 0.25s ease-in-out;
+					background-color: $AdditionalColor_Purple1;
+				}
+
+				li {
+					list-style: none;
+					a {
+						text-decoration: none;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option1;
+						color: $baseColor_white;
+					}
+
+					.bi {
+						align-items: center;
+						margin-left: 0.25rem;
+					}
+				}
+
+				li:hover {
+					a,
+					.bi {
+						transition: all 0.25s ease-in-out;
+						color: $secondary_pink1;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ===== Image Section =====*/
+.Image {
+	.content {
+		height: 350px;
+		background: url(/src/img/gjnfgjf.jpg) no-repeat center;
 	}
 }
 
