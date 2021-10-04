@@ -9,14 +9,14 @@ function inStoreOptionDisplay() {
 		showDisplay.style.display = "block";
 		displayStyles.style.color = "#fff";
 		displayStyles.style.minHeight = "5.5rem";
-		plusBtn.style.backgroundColor = "#ff0055";
+		plusBtn.style.backgroundColor = "#ff0099";
 
 		// More Featured Projects Button
 		plusBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
 	} else {
 		showDisplay.style.display = "none";
 		displayStyles.style.color = "#111";
-		plusBtn.style.backgroundColor = "#9d73ff";
+		plusBtn.style.backgroundColor = "#ff0099";
 		// More Featured Projects Button
 		plusBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
 	}

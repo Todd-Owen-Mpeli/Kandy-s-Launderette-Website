@@ -318,7 +318,12 @@ p {
 		}
 
 		.row {
-			.col {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			grid-gap: 2rem;
+
+			div {
 				padding: 2rem;
 				margin: 0 1rem;
 				border-radius: 10px;
@@ -447,17 +452,17 @@ p {
 
 			button {
 				border: none;
+				text-align: center;
 				cursor: pointer;
 				padding: 0.75rem;
 				margin-top: 0.75rem;
 				border-radius: 10px;
-				font-size: $fontSize_small;
 				color: $baseColor_white;
 				background-color: $secondary_pinkRed;
 
 				.bi {
 					color: $baseColor_white;
-					font-size: $fontSize_normal;
+					font-size: $fontSize_small;
 				}
 			}
 
@@ -468,6 +473,7 @@ p {
 		}
 
 		.inStoregOption {
+			display: none;
 			padding: 1.5rem;
 
 			h2 {
@@ -551,11 +557,28 @@ p {
 		}
 	}
 
-	@media only screen and (max-width: 767px) {
+	@media only screen and (min-width: 577px) and (max-width: 767px) {
 		.content {
 			.row {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr;
+				grid-gap: 1rem;
+
 				div {
 					margin-bottom: 1.5rem;
+
+					.prime {
+						transform: scale(1);
+					}
+				}
+			}
+
+			.inStoregOption {
+				.info {
+					grid-template-columns: 1fr;
+					grid-template-rows: 1fr;
+					grid-gap: 2rem;
 				}
 			}
 		}
