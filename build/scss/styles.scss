@@ -403,6 +403,7 @@ p {
 			}
 
 			.prime {
+				transform: scale(1.05);
 				background-color: $AdditionalColor_Purple1;
 
 				h2,
@@ -425,6 +426,11 @@ p {
 						color: $AdditionalColor-whiteDouble;
 					}
 				}
+			}
+
+			.prime:hover {
+				transition: all 0.25s ease-in-out;
+				transform: scale(1.06);
 			}
 		}
 
@@ -461,10 +467,19 @@ p {
 			}
 
 			.row {
+				display: grid;
 				margin-top: 1.5rem;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: 1fr;
+				grid-column-gap: 2rem;
+				grid-row-gap: 1rem;
 
 				.col {
 					background-color: $baseColor_lightBlack;
+
+					.ss {
+						margin-bottom: 2rem;
+					}
 				}
 			}
 		}
