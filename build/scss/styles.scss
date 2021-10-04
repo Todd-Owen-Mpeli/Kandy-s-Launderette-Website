@@ -300,32 +300,30 @@ p {
 
 /* ===== SERVICES =====*/
 .pricingOption {
-	padding: 1rem;
 	background-color: $backgroundColor_black;
 
 	.content {
-		// height: 50rem;
 		padding: 2rem 1rem;
-		// border: #7a42fc 0.25rem solid;
 
 		.pricingOption {
-			margin-bottom: 1rem;
+			padding: 1rem;
+			margin-bottom: 2rem;
+
 			h2 {
 				text-align: center;
 				color: $baseColor_white;
-				// text-transform: uppercase;
 				font-size: $fontSize_large-1;
 				font-family: $fontStyle_option1;
 			}
 		}
 
 		.row {
-			div {
+			.col {
 				padding: 2rem;
 				margin: 0 1rem;
 				border-radius: 10px;
 				margin-bottom: 2rem;
-				background-color: $baseColor_lightBlack;
+				background-color: $backgroundColor_lightBlack;
 
 				h2 {
 					text-align: left;
@@ -337,7 +335,7 @@ p {
 
 				h5 {
 					text-align: left;
-					font-size: $fontSize_large;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_option1;
 					color: $AdditionalColor-lightGrey;
 				}
@@ -376,6 +374,7 @@ p {
 				li {
 					list-style: none;
 					margin-top: 2rem;
+
 					a {
 						text-decoration: none;
 						font-size: $fontSize_normal;
@@ -425,6 +424,47 @@ p {
 					.bi {
 						color: $AdditionalColor-whiteDouble;
 					}
+				}
+			}
+		}
+
+		.inStoregOption {
+			padding: 1rem;
+			margin-bottom: 2rem;
+
+			h2 {
+				text-align: left;
+				color: $baseColor_white;
+				font-size: $fontSize_large;
+				font-family: $fontStyle_option1;
+			}
+
+			button {
+				border: none;
+				cursor: pointer;
+				padding: 0.75rem;
+				margin-top: 0.75rem;
+				border-radius: 10px;
+				font-size: $fontSize_small;
+				color: $baseColor_white;
+				background-color: $secondary_pinkRed;
+
+				.bi {
+					color: $baseColor_white;
+					font-size: $fontSize_normal;
+				}
+			}
+
+			button:hover {
+				transition: all 0.25s ease-in-out;
+				background-color: $AdditionalColor_Purple1;
+			}
+
+			.row {
+				margin-top: 1.5rem;
+
+				.col {
+					background-color: $baseColor_lightBlack;
 				}
 			}
 		}
