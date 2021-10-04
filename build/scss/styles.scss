@@ -318,11 +318,6 @@ p {
 		}
 
 		.row {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: 1fr;
-			grid-gap: 2rem;
-
 			div {
 				padding: 2rem;
 				margin: 0 1rem;
@@ -435,7 +430,7 @@ p {
 
 			.prime:hover {
 				transition: all 0.25s ease-in-out;
-				transform: scale(1.06);
+				transform: scale(1.065);
 			}
 		}
 
@@ -557,28 +552,108 @@ p {
 		}
 	}
 
-	@media only screen and (min-width: 577px) and (max-width: 767px) {
+	@media only screen and (max-width: 767px) {
 		.content {
 			.row {
+				padding: 0;
+				margin: auto;
 				display: grid;
+				padding: 1.5rem;
 				grid-template-columns: 1fr;
 				grid-template-rows: 1fr;
-				grid-gap: 1rem;
+				grid-gap: 2rem;
 
 				div {
-					margin-bottom: 1.5rem;
+					margin: auto;
+				}
+			}
 
-					.prime {
-						transform: scale(1);
+			.prime {
+				transform: scale(-0.5);
+			}
+
+			.prime:hover {
+				transform: scale(1);
+			}
+
+			.inStoregOption {
+				.info {
+					display: grid;
+					grid-template-columns: 1fr;
+					grid-template-rows: 1fr;
+					grid-gap: 1rem;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 768px) {
+		.content {
+			.row {
+				padding: 1rem;
+				margin: auto;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: 1fr;
+				grid-gap: 1.5rem;
+
+				div {
+					margin: auto;
+					height: 100%;
+
+					h2 {
+						font-size: $fontSize_large-0;
+					}
+
+					.ss {
+						margin-bottom: 3rem;
+					}
+
+					h5,
+					p,
+					button {
+						font-size: $fontSize_small;
+					}
+
+					li {
+						a {
+							font-size: $fontSize_small;
+						}
+					}
+
+					li:hover {
+						a,
+						.bi {
+							transition: all 0.25s ease-in-out;
+							color: $AdditionalColor-whiteDouble;
+						}
+
+						.bi {
+							transition: all 0.25s ease-in-out;
+							margin-left: 0.65rem;
+						}
 					}
 				}
 			}
 
 			.inStoregOption {
 				.info {
-					grid-template-columns: 1fr;
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
 					grid-template-rows: 1fr;
 					grid-gap: 2rem;
+
+					div {
+						height: 100%;
+
+						h2 {
+							text-align: left;
+							letter-spacing: 0.15rem;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_option1;
+							color: $baseColor_white;
+						}
+					}
 				}
 			}
 		}
