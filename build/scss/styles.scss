@@ -282,6 +282,19 @@ p {
 				}
 			}
 		}
+
+		@media only screen and (max-width: 576px) {
+			.gridContent {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		@media only screen and (min-width: 577px) and (max-width: 767px) {
+			.gridContent {
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 2rem;
+			}
+		}
 	}
 }
 
@@ -293,33 +306,45 @@ p {
 	.content {
 		// height: 50rem;
 		padding: 2rem 1rem;
-		border: #7a42fc 0.25rem solid;
+		// border: #7a42fc 0.25rem solid;
+
+		.pricingOption {
+			margin-bottom: 1rem;
+			h2 {
+				text-align: center;
+				color: $baseColor_white;
+				// text-transform: uppercase;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+		}
 
 		.row {
 			div {
 				padding: 2rem;
 				margin: 0 1rem;
 				border-radius: 10px;
-				// border: #ee87f7 0.25rem solid;
 				background-color: $backgroundColor_black;
 
-				.fas {
-					margin-right: 0.35rem;
-				}
+				.info {
+					padding: 1rem;
+					width: fit-content;
+					margin-bottom: 2rem;
 
-				h2 {
-					text-align: left;
-					letter-spacing: 0.15rem;
-					font-size: $fontSize_large-0;
-					font-family: $fontStyle_option1;
-					color: $baseColor_white;
-				}
+					h2 {
+						text-align: left;
+						letter-spacing: 0.15rem;
+						font-size: $fontSize_large-1;
+						font-family: $fontStyle_option1;
+						color: $baseColor_white;
+					}
 
-				h5 {
-					text-align: left;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_option1;
-					color: $AdditionalColor-lightGrey;
+					h5 {
+						text-align: left;
+						font-size: $fontSize_large;
+						font-family: $fontStyle_option1;
+						color: $AdditionalColor-lightGrey;
+					}
 				}
 
 				p {
@@ -332,9 +357,11 @@ p {
 				}
 
 				button {
-					padding: 1rem;
 					border: none;
+					padding: 1rem;
+					margin: 1rem 0;
 					border-radius: 5px;
+					letter-spacing: 0.05rem;
 					color: $baseColor_white;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_option1;
@@ -346,26 +373,116 @@ p {
 					background-color: $AdditionalColor_Purple1;
 				}
 
-				li {
-					list-style: none;
-					a {
-						text-decoration: none;
-						font-size: $fontSize_normal;
+				.learnMore {
+					padding: 1rem;
+					width: fit-content;
+
+					li {
+						list-style: none;
+						a {
+							text-decoration: none;
+							font-size: $fontSize_normal;
+							font-family: $fontStyle_option1;
+							color: $baseColor_white;
+						}
+
+						.bi {
+							align-items: center;
+							margin-left: 0.25rem;
+						}
+					}
+
+					li:hover {
+						a,
+						.bi {
+							transition: all 0.25s ease-in-out;
+							color: $AdditionalColor_Purple1;
+						}
+					}
+				}
+			}
+		}
+
+		.prime {
+			background-color: $AdditionalColor_Purple1;
+			div {
+				padding: 2rem;
+				margin: 0 1rem;
+				border-radius: 10px;
+				background-color: $backgroundColor_black;
+
+				.info {
+					padding: 1rem;
+					width: fit-content;
+					margin-bottom: 2rem;
+
+					h2 {
+						text-align: left;
+						letter-spacing: 0.15rem;
+						font-size: $fontSize_large-1;
 						font-family: $fontStyle_option1;
 						color: $baseColor_white;
 					}
 
-					.bi {
-						align-items: center;
-						margin-left: 0.25rem;
+					h5 {
+						text-align: left;
+						font-size: $fontSize_large;
+						font-family: $fontStyle_option1;
+						color: $AdditionalColor-lightGrey;
 					}
 				}
 
-				li:hover {
-					a,
-					.bi {
-						transition: all 0.25s ease-in-out;
-						color: $secondary_pink1;
+				p {
+					margin-top: 1rem;
+					text-align: left;
+					font-weight: 200;
+					font-size: $fontSize_small;
+					font-family: $fontStyle_option2;
+					color: $AdditionalColor-lightGrey;
+				}
+
+				button {
+					border: none;
+					padding: 1rem;
+					margin: 1rem 0;
+					border-radius: 5px;
+					letter-spacing: 0.05rem;
+					color: $baseColor_white;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option1;
+					background-color: $secondary_pinkRed;
+				}
+
+				button:hover {
+					transition: all 0.25s ease-in-out;
+					background-color: $AdditionalColor_Purple1;
+				}
+
+				.learnMore {
+					padding: 1rem;
+					width: fit-content;
+
+					li {
+						list-style: none;
+						a {
+							text-decoration: none;
+							font-size: $fontSize_normal;
+							font-family: $fontStyle_option1;
+							color: $baseColor_white;
+						}
+
+						.bi {
+							align-items: center;
+							margin-left: 0.25rem;
+						}
+					}
+
+					li:hover {
+						a,
+						.bi {
+							transition: all 0.25s ease-in-out;
+							color: $AdditionalColor_Purple1;
+						}
 					}
 				}
 			}
