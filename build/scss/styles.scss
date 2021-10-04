@@ -151,11 +151,9 @@ p {
 /* ===== ABOUT US =====*/
 .aboutUs {
 	margin: auto;
-	padding: 3rem 0;
-	border: #f360b8 0.25rem solid;
+	padding: 2rem 0;
 
 	.contentTop {
-		padding: 1rem;
 		margin: auto;
 
 		div {
@@ -192,35 +190,6 @@ p {
 			}
 		}
 	}
-
-	.content {
-		margin: auto;
-		padding: 1rem;
-
-		h2 {
-			text-align: left;
-			font-size: $fontSize_large;
-			font-family: $fontStyle_option2;
-			color: $baseColor_black;
-		}
-
-		p {
-			margin-top: 0.5rem;
-			text-align: left;
-			font-weight: 200;
-			font-size: $fontSize_normal;
-			font-family: $fontStyle_option2;
-			color: $baseColor_black;
-		}
-	}
-}
-
-/* ===== SERVICES =====*/
-.services {
-	border: #f360b8 0.25rem solid;
-	.content {
-		height: 350px;
-	}
 }
 
 /* ===== ABOUT US =====*/
@@ -233,11 +202,12 @@ p {
 		padding: 1rem;
 
 		h2 {
+			font-weight: 900;
 			text-align: center;
-			word-spacing: 0.25rem;
-			font-size: $fontSize_large-1;
-			font-family: $fontStyle_option3;
+			margin-bottom: 2rem;
 			color: $baseColor_black;
+			font-size: $fontSize_large-1;
+			font-family: $fontStyle_option1;
 		}
 
 		.diffLine {
@@ -666,8 +636,11 @@ p {
 }
 
 /* ===== Image Section =====*/
-.Image {
-	.content {
+.contactUs {
+	padding: 1rem;
+
+	.imageOverlay {
+		height: 15rem;
 		img {
 			z-index: 99;
 			width: 100%;
@@ -676,6 +649,30 @@ p {
 			object-fit: contain;
 			position: relative;
 		}
+	}
+	.content {
+		padding: 1rem;
+
+		h2 {
+			text-align: center;
+			color: $baseColor_black;
+			font-size: $fontSize_large-1;
+			font-family: $fontStyle_option1;
+		}
+
+		p {
+			margin-top: 1.5rem;
+			text-align: left;
+			font-weight: 200;
+			color: $baseColor_black;
+			text-transform: capitalize;
+			font-size: $fontSize_normal;
+			font-family: $fontStyle_option2;
+		}
+	}
+
+	.contactForm {
+		height: 35rem;
 	}
 
 	@media only screen and (max-width: 767px) {
