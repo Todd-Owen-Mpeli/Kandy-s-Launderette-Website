@@ -304,6 +304,7 @@ p {
 
 /* ===== SERVICES =====*/
 .pricingOption {
+	padding-bottom: 10rem;
 	background-color: $backgroundColor_black;
 
 	.content {
@@ -667,12 +668,26 @@ p {
 /* ===== Image Section =====*/
 .Image {
 	.content {
-		height: 30rem;
-
 		img {
-			height: 400px;
+			z-index: 99;
 			width: 100%;
+			bottom: 215px;
+			height: 450px;
 			object-fit: contain;
+			position: relative;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		.content {
+			img {
+				z-index: 99;
+				width: 100%;
+				bottom: 150px;
+				height: 250px;
+				object-fit: contain;
+				position: relative;
+			}
 		}
 	}
 }
