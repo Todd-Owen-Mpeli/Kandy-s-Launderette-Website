@@ -301,7 +301,7 @@ p {
 /* ===== SERVICES =====*/
 .pricingOption {
 	padding: 1rem;
-	background-color: $backgroundColor_lightBlack;
+	background-color: $backgroundColor_black;
 
 	.content {
 		// height: 50rem;
@@ -324,33 +324,33 @@ p {
 				padding: 2rem;
 				margin: 0 1rem;
 				border-radius: 10px;
-				background-color: $backgroundColor_black;
+				margin-bottom: 2rem;
+				background-color: $baseColor_lightBlack;
 
-				.info {
-					padding: 1rem;
-					width: fit-content;
-					margin-bottom: 2rem;
+				h2 {
+					text-align: left;
+					letter-spacing: 0.15rem;
+					font-size: $fontSize_large-1;
+					font-family: $fontStyle_option1;
+					color: $baseColor_white;
+				}
 
-					h2 {
-						text-align: left;
-						letter-spacing: 0.15rem;
-						font-size: $fontSize_large-1;
-						font-family: $fontStyle_option1;
-						color: $baseColor_white;
-					}
+				h5 {
+					text-align: left;
+					font-size: $fontSize_large;
+					font-family: $fontStyle_option1;
+					color: $AdditionalColor-lightGrey;
+				}
 
-					h5 {
-						text-align: left;
-						font-size: $fontSize_large;
-						font-family: $fontStyle_option1;
-						color: $AdditionalColor-lightGrey;
-					}
+				.ss {
+					margin-bottom: 3rem;
 				}
 
 				p {
 					margin-top: 1rem;
 					text-align: left;
 					font-weight: 200;
+					text-transform: capitalize;
 					font-size: $fontSize_small;
 					font-family: $fontStyle_option2;
 					color: $AdditionalColor-lightGrey;
@@ -361,8 +361,8 @@ p {
 					padding: 1rem;
 					margin: 1rem 0;
 					border-radius: 5px;
-					letter-spacing: 0.05rem;
 					color: $baseColor_white;
+					letter-spacing: 0.05rem;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_option1;
 					background-color: $secondary_pinkRed;
@@ -373,116 +373,57 @@ p {
 					background-color: $AdditionalColor_Purple1;
 				}
 
-				.learnMore {
-					padding: 1rem;
-					width: fit-content;
-
-					li {
-						list-style: none;
-						a {
-							text-decoration: none;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_option1;
-							color: $baseColor_white;
-						}
-
-						.bi {
-							align-items: center;
-							margin-left: 0.25rem;
-						}
+				li {
+					list-style: none;
+					margin-top: 2rem;
+					a {
+						text-decoration: none;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option1;
+						color: $baseColor_white;
 					}
 
-					li:hover {
-						a,
-						.bi {
-							transition: all 0.25s ease-in-out;
-							color: $AdditionalColor_Purple1;
-						}
+					.bi {
+						align-items: center;
+						margin-left: 0.25rem;
+					}
+				}
+
+				li:hover {
+					a,
+					.bi {
+						transition: all 0.25s ease-in-out;
+						color: $AdditionalColor-whiteDouble;
+					}
+
+					.bi {
+						transition: all 0.25s ease-in-out;
+						margin-left: 0.65rem;
 					}
 				}
 			}
-		}
 
-		.prime {
-			background-color: $AdditionalColor_Purple1;
-			div {
-				padding: 2rem;
-				margin: 0 1rem;
-				border-radius: 10px;
-				background-color: $backgroundColor_black;
+			.prime {
+				background-color: $AdditionalColor_Purple1;
 
-				.info {
-					padding: 1rem;
-					width: fit-content;
-					margin-bottom: 2rem;
-
-					h2 {
-						text-align: left;
-						letter-spacing: 0.15rem;
-						font-size: $fontSize_large-1;
-						font-family: $fontStyle_option1;
-						color: $baseColor_white;
-					}
-
-					h5 {
-						text-align: left;
-						font-size: $fontSize_large;
-						font-family: $fontStyle_option1;
-						color: $AdditionalColor-lightGrey;
-					}
-				}
-
+				h2,
+				h5,
 				p {
-					margin-top: 1rem;
-					text-align: left;
-					font-weight: 200;
-					font-size: $fontSize_small;
-					font-family: $fontStyle_option2;
-					color: $AdditionalColor-lightGrey;
+					color: $baseColor_white;
 				}
 
 				button {
-					border: none;
-					padding: 1rem;
-					margin: 1rem 0;
-					border-radius: 5px;
-					letter-spacing: 0.05rem;
-					color: $baseColor_white;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_option1;
 					background-color: $secondary_pinkRed;
 				}
 
 				button:hover {
-					transition: all 0.25s ease-in-out;
-					background-color: $AdditionalColor_Purple1;
+					background-color: $secondary_orange;
 				}
 
-				.learnMore {
-					padding: 1rem;
-					width: fit-content;
-
-					li {
-						list-style: none;
-						a {
-							text-decoration: none;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_option1;
-							color: $baseColor_white;
-						}
-
-						.bi {
-							align-items: center;
-							margin-left: 0.25rem;
-						}
-					}
-
-					li:hover {
-						a,
-						.bi {
-							transition: all 0.25s ease-in-out;
-							color: $AdditionalColor_Purple1;
-						}
+				li:hover {
+					a,
+					.bi {
+						color: $AdditionalColor-whiteDouble;
 					}
 				}
 			}
