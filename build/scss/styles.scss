@@ -164,8 +164,8 @@ p {
 
 			img {
 				height: 400px;
-				// width: 100%;
 				max-width: 100%;
+				object-fit: contain;
 			}
 
 			h5 {
@@ -241,9 +241,13 @@ p {
 		}
 
 		.diffLine {
-			margin-top: 1rem;
-			height: 200px;
-			background: url(/src/img/sadada.png) no-repeat center;
+			margin: 1rem 0;
+
+			img {
+				height: 300px;
+				width: 100%;
+				object-fit: contain;
+			}
 		}
 
 		.gridContent {
@@ -663,8 +667,13 @@ p {
 /* ===== Image Section =====*/
 .Image {
 	.content {
-		height: 350px;
-		background: url(/src/img/gjnfgjf.jpg) no-repeat center;
+		height: 30rem;
+
+		img {
+			height: 400px;
+			width: 100%;
+			object-fit: contain;
+		}
 	}
 }
 
