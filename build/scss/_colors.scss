@@ -37,7 +37,7 @@ $backgroundGradient: linear-gradient(
 );
 
 /* Featured Projects background colour change */
-@keyframes heroGradientKeyframes {
+@keyframes GradientKeyframes {
 	0% {
 		background-position: 0 50%;
 	}
@@ -48,3 +48,12 @@ $backgroundGradient: linear-gradient(
 		background-position: 0 50%;
 	}
 }
+
+// Background Gradient Variable
+$backgroundGradient2: linear-gradient(
+	-55deg,
+	#fbcf40,
+	#f857b8,
+	#ee5eb5,
+	#fbcf40
+);

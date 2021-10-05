@@ -47,7 +47,8 @@ p {
 	background-size: 1200% 600%;
 	background-position: center;
 	background-repeat: no-repeat;
-	animation: heroGradientKeyframes 20s ease-in-out infinite;
+
+	animation: GradientKeyframes 20s ease-in-out infinite;
 
 	/*===== NAVIGATION MENU =====*/
 	.header {
@@ -191,7 +192,7 @@ p {
 	}
 }
 
-/* ===== ABOUT US =====*/
+/* ===== WHY CHOOSE US =====*/
 .whyChooseUs {
 	margin: auto;
 	padding: 1rem 0;
@@ -271,7 +272,126 @@ p {
 	}
 }
 
-/* ===== SERVICES =====*/
+/* ===== SCHEDULE BOOKING =====*/
+.scheduleBooking {
+	padding-bottom: 10rem;
+	background-color: $AdditionalColor-whiteDouble;
+
+	.content {
+		padding: 2rem 1rem;
+
+		.scheduleOption {
+			padding: 1rem;
+			margin-bottom: 2rem;
+
+			h2 {
+				text-align: center;
+				color: $baseColor_lightBlack;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+		}
+		.display {
+			.content {
+				padding: 2rem;
+				margin: 0 0.5rem;
+				align-self: center;
+				height: 100%;
+				border-radius: 10px;
+				box-shadow: $box-shadow-7;
+				border: $baseColor_black 0.25rem solid;
+
+				h2 {
+					text-align: left;
+					letter-spacing: 0.15rem;
+					font-size: $fontSize_large-1;
+					font-family: $fontStyle_option1;
+					color: $baseColor_lightBlack;
+				}
+
+				h5 {
+					text-align: left;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option1;
+					color: $AdditionalColor-lightGrey;
+				}
+
+				.ss {
+					margin-bottom: 3rem;
+				}
+
+				p {
+					margin-top: 1rem;
+					text-align: left;
+					font-weight: 200;
+					text-transform: capitalize;
+					font-size: $fontSize_small;
+					font-family: $fontStyle_option2;
+					color: $AdditionalColor-lightGrey;
+				}
+
+				button {
+					border: none;
+					padding: 1rem;
+					margin: 1rem 0;
+					border-radius: 5px;
+					color: $baseColor_white;
+					letter-spacing: 0.05rem;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option1;
+					background-color: $secondary_pinkRed;
+				}
+
+				button:hover {
+					transition: all 0.25s ease-in-out;
+					background-color: $AdditionalColor_Purple1;
+				}
+
+				li {
+					padding: 0.75rem;
+					list-style: none;
+					margin-top: 2rem;
+					border-radius: 5px;
+					width: fit-content;
+					background-color: $secondary_pinkRed;
+
+					a {
+						text-decoration: none;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option1;
+						color: $baseColor_white;
+					}
+
+					.bi {
+						align-items: center;
+						margin-left: 0.25rem;
+					}
+				}
+
+				li:hover {
+					a,
+					.bi {
+						transition: all 0.25s ease-in-out;
+						color: $baseColor_white;
+					}
+
+					.bi {
+						transition: all 0.25s ease-in-out;
+						margin-left: 0.65rem;
+					}
+				}
+			}
+
+			.content:hover {
+				transition: all 0.25s ease-in-out;
+				box-shadow: $box-shadow-8;
+				border: $secondary_pinkRed 0.25rem solid;
+			}
+		}
+	}
+}
+
+/* ===== PRICING OPTION  =====*/
 .pricingOption {
 	padding-bottom: 10rem;
 	background-color: $backgroundColor_black;
