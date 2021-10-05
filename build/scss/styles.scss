@@ -301,83 +301,88 @@ p {
 				box-shadow: $box-shadow-7;
 				border: $baseColor_black 0.25rem solid;
 
-				h2 {
-					text-align: left;
-					letter-spacing: 0.15rem;
-					font-size: $fontSize_large-1;
-					font-family: $fontStyle_option1;
-					color: $baseColor_lightBlack;
-				}
+				div {
+					h2 {
+						text-align: left;
+						letter-spacing: 0.15rem;
+						font-size: $fontSize_large;
+						font-family: $fontStyle_option1;
+						color: $baseColor_lightBlack;
+					}
 
-				h5 {
-					text-align: left;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_option1;
-					color: $AdditionalColor-lightGrey;
-				}
-
-				.ss {
-					margin-bottom: 3rem;
-				}
-
-				p {
-					margin-top: 1rem;
-					text-align: left;
-					font-weight: 200;
-					text-transform: capitalize;
-					font-size: $fontSize_small;
-					font-family: $fontStyle_option2;
-					color: $AdditionalColor-lightGrey;
-				}
-
-				button {
-					border: none;
-					padding: 1rem;
-					margin: 1rem 0;
-					border-radius: 5px;
-					color: $baseColor_white;
-					letter-spacing: 0.05rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_option1;
-					background-color: $secondary_pinkRed;
-				}
-
-				button:hover {
-					transition: all 0.25s ease-in-out;
-					background-color: $AdditionalColor_Purple1;
-				}
-
-				li {
-					padding: 0.75rem;
-					list-style: none;
-					margin-top: 2rem;
-					border-radius: 5px;
-					width: fit-content;
-					background-color: $secondary_pinkRed;
-
-					a {
-						text-decoration: none;
+					h5 {
+						text-align: left;
 						font-size: $fontSize_normal;
 						font-family: $fontStyle_option1;
+						color: $AdditionalColor-lightGrey;
+					}
+
+					p {
+						padding: 0;
+						margin: 0.2rem;
+						text-align: left;
+						font-weight: 200;
+						text-transform: capitalize;
+						font-size: $fontSize_small;
+						font-family: $fontStyle_option2;
+						color: $AdditionalColor-lightGrey;
+
+						.bi {
+							margin-right: 0.5rem;
+							color: $baseColor_black;
+							font-size: $fontSize_small;
+						}
+					}
+
+					button {
+						border: none;
+						padding: 1rem;
+						margin: 1rem 0;
+						border-radius: 5px;
 						color: $baseColor_white;
+						letter-spacing: 0.05rem;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option1;
+						background-color: $secondary_pinkRed;
 					}
 
-					.bi {
-						align-items: center;
-						margin-left: 0.25rem;
-					}
-				}
-
-				li:hover {
-					a,
-					.bi {
+					button:hover {
 						transition: all 0.25s ease-in-out;
-						color: $baseColor_white;
+						background-color: $AdditionalColor_Purple1;
 					}
 
-					.bi {
-						transition: all 0.25s ease-in-out;
-						margin-left: 0.65rem;
+					li {
+						padding: 0.75rem;
+						list-style: none;
+						margin-top: 2rem;
+						border-radius: 5px;
+						width: fit-content;
+						background-color: $secondary_pinkRed;
+
+						a {
+							text-decoration: none;
+							font-size: $fontSize_normal;
+							font-family: $fontStyle_option1;
+							color: $baseColor_white;
+						}
+
+						.bi {
+							align-items: center;
+							margin-left: 0.5rem;
+						}
+					}
+
+					li:hover {
+						a,
+						.bi {
+							transition: all 0.25s ease-in-out;
+							color: $baseColor_white;
+						}
+
+						.bi {
+							transition: all 0.25s ease-in-out;
+							margin-left: 0.75rem;
+						}
 					}
 				}
 			}
