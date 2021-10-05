@@ -204,6 +204,24 @@ p {
 		box-shadow: $box-shadow-8;
 		border: $baseColor_lightBlack 0.25rem solid;
 	}
+
+	@media only screen and (max-width: 767px) {
+		.aboutUs {
+			height: fit-content;
+
+			.contentTop {
+				z-index: 0;
+				bottom: 0px;
+				position: inherit;
+				box-shadow: $box-shadow-0;
+			}
+
+			.contentTop:hover {
+				transition: all 0.25s ease-in-out;
+				box-shadow: $box-shadow-0;
+			}
+		}
+	}
 }
 
 /* ===== WHY CHOOSE US =====*/
@@ -305,6 +323,7 @@ p {
 				font-family: $fontStyle_option1;
 			}
 		}
+
 		.display {
 			.content {
 				padding: 2rem;
@@ -398,12 +417,17 @@ p {
 							margin-left: 0.75rem;
 						}
 					}
+
+					img {
+						border-radius: 15px;
+						width: 100%;
+					}
 				}
 			}
 
 			.content:hover {
 				transition: all 0.25s ease-in-out;
-				box-shadow: $box-shadow-8;
+				box-shadow: $box-shadow-9;
 				border: $secondary_pinkRed 0.25rem solid;
 			}
 		}
