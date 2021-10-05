@@ -47,7 +47,6 @@ p {
 	background-size: 1200% 600%;
 	background-position: center;
 	background-repeat: no-repeat;
-
 	animation: GradientKeyframes 20s ease-in-out infinite;
 
 	/*===== NAVIGATION MENU =====*/
@@ -73,7 +72,7 @@ p {
 
 				a:hover {
 					transition: all 0.25s ease-in-out;
-					color: $secondary_orange;
+					color: $baseColor_black;
 				}
 			}
 
@@ -99,7 +98,7 @@ p {
 
 						a:hover {
 							transition: all 0.25s ease-in-out;
-							color: $secondary_orange;
+							color: $baseColor_black;
 						}
 					}
 				}
@@ -774,6 +773,7 @@ p {
 			position: relative;
 		}
 	}
+
 	.content {
 		padding: 1rem;
 
