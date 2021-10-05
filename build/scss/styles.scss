@@ -41,113 +41,111 @@ p {
 	line-height: 1.25em;
 }
 
-/*===== NAVIGATION MENU =====*/
-.header {
-	margin: auto;
-	padding: 1rem;
-	// border: #5936f3 0.25rem solid;
-
-	.nav {
-		margin: auto;
-		padding: 0rem;
-		align-items: center;
-
-		.nav_Logo {
-			a {
-				font-weight: 500;
-				word-spacing: 0.25rem;
-				text-decoration: none;
-				color: $baseColor_black;
-				letter-spacing: 0.025rem;
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_option3;
-			}
-
-			a:hover {
-				transition: all 0.25s ease-in-out;
-				color: $secondary_pinkRed;
-			}
-		}
-
-		.nav__menu {
-			margin: auto;
-			padding: 0rem;
-
-			ul {
-				margin: auto;
-				padding: 0rem;
-				list-style: none;
-				text-align: center;
-
-				li {
-					margin: auto;
-					padding: 0rem;
-
-					.uil {
-						display: none;
-					}
-
-					a {
-						font-weight: 500;
-						text-decoration: none;
-						color: $baseColor_black;
-						text-transform: uppercase;
-						font-size: $fontSize_small;
-						font-family: $fontStyle_body;
-					}
-
-					a:hover {
-						transition: all 0.25s ease-in-out;
-						color: $secondary_pinkRed;
-					}
-				}
-			}
-		}
-	}
-}
-
-/* ===== HERO =====*/
-.hero {
+/*===== BACKGROUND GRADIENT SECTION =====*/
+.backgroundGradient {
 	background: $backgroundGradient;
 	background-size: 1200% 600%;
 	background-position: center;
 	background-repeat: no-repeat;
 	animation: heroGradientKeyframes 20s ease-in-out infinite;
 
-	.content {
+	/*===== NAVIGATION MENU =====*/
+	.header {
 		margin: auto;
 		padding: 1rem;
-		height: 25rem;
 
-		div {
+		.nav {
 			margin: auto;
+			padding: 0;
+			// align-items: center;
 
-			img {
-				height: auto;
-				width: 350px;
-				max-width: 100%;
+			.nav_Logo {
+				a {
+					font-weight: 500;
+					word-spacing: 0.25rem;
+					text-decoration: none;
+					color: $AdditionalColor-whiteDouble;
+					letter-spacing: 0.025rem;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option3;
+				}
+
+				a:hover {
+					transition: all 0.25s ease-in-out;
+					color: $secondary_orange;
+				}
 			}
 
-			h2 {
-				text-align: center;
-				word-spacing: 0.25rem;
-				letter-spacing: 0.1rem;
-				text-transform: uppercase;
-				font-size: $fontSize_XL-large;
-				font-family: $fontStyle_option3;
-				color: $AdditionalColor-whiteDouble;
-			}
+			.nav__menu {
+				ul {
+					margin: auto;
 
-			p {
-				text-align: center;
-				font-weight: 200;
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_option2;
-				color: $AdditionalColor-whiteDouble;
+					li {
+						padding: 0;
+						list-style: none;
+						text-align: center;
+
+						.uil {
+							display: none;
+						}
+
+						a {
+							text-decoration: none;
+							color: $AdditionalColor-whiteDouble;
+							font-size: $fontSize_small;
+							font-family: $fontStyle_body;
+						}
+
+						a:hover {
+							transition: all 0.25s ease-in-out;
+							color: $secondary_orange;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* ===== HERO =====*/
+	.hero {
+		// background: #7a42fc;
+
+		.content {
+			margin: auto;
+			padding: 1rem;
+			height: 40rem;
+
+			div {
+				margin: auto;
+
+				img {
+					height: auto;
+					width: 350px;
+					max-width: 100%;
+				}
+
+				h2 {
+					text-align: center;
+					word-spacing: 0.25rem;
+					letter-spacing: 0.1rem;
+					text-transform: uppercase;
+					font-size: $fontSize_XL-large;
+					font-family: $fontStyle_option3;
+					color: $AdditionalColor-whiteDouble;
+				}
+
+				p {
+					text-align: center;
+					font-weight: 200;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option2;
+					color: $AdditionalColor-whiteDouble;
+				}
 			}
 		}
 	}
 }
+
 /* ===== ABOUT US =====*/
 .aboutUs {
 	margin: auto;
@@ -617,7 +615,7 @@ p {
 					display: grid;
 					grid-template-columns: repeat(3, 1fr);
 					grid-template-rows: 1fr;
-					grid-gap: 2rem;
+					grid-gap: 1.25rem;
 
 					div {
 						height: 100%;

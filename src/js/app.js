@@ -27,3 +27,11 @@ function inStoreOptionDisplay() {
 inStoregOptionBtn.addEventListener("click", () => {
 	inStoreOptionDisplay();
 });
+
+/*===== WEBSITE SCROLL REVEAL =====*/
+window.addEventListener("scroll", reveal);
+
+// Scroll Reveal Elements
+function reveal() {
+	const reveals = document.querySelectorAll(".reveal");
+}
