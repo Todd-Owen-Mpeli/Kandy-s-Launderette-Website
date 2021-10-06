@@ -43,16 +43,16 @@ p {
 
 /*===== BACKGROUND GRADIENT SECTION =====*/
 .backgroundGradient {
-	background: $backgroundGradient;
-	background-size: 1200% 600%;
+	background: url(/src/img/alexandra-poliakova-EXCroywwrEw-unsplash.jpg);
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	animation: GradientKeyframes 20s ease-in-out infinite;
 
 	/*===== NAVIGATION MENU =====*/
 	.header {
 		margin: auto;
 		padding: 1rem;
+		background: $secondary_pink1;
 
 		.nav {
 			margin: auto;
@@ -79,6 +79,7 @@ p {
 			.nav__menu {
 				ul {
 					margin: auto;
+					justify-content: flex-end;
 
 					li {
 						padding: 0;
@@ -152,7 +153,11 @@ p {
 	margin: auto;
 	height: 30rem;
 	padding: 2rem 0;
-	background-color: $AdditionalColor-whiteDouble;
+	background: $backgroundGradient;
+	background-size: 1200% 600%;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: GradientKeyframes 20s ease-in-out infinite;
 
 	.contentTop {
 		z-index: 99;
@@ -164,6 +169,15 @@ p {
 		box-shadow: $box-shadow-7;
 		background-color: $baseColor_white;
 
+		h2 {
+			padding: 1rem;
+			margin-top: 1rem;
+			text-align: center;
+			color: $baseColor_black;
+			font-size: $fontSize_large-1;
+			font-family: $fontStyle_option1;
+		}
+
 		div {
 			padding: 4rem 2rem;
 			margin: 0 0.25rem;
@@ -172,13 +186,6 @@ p {
 				height: 400px;
 				max-width: 100%;
 				object-fit: contain;
-			}
-
-			h5 {
-				text-align: left;
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_option1;
-				color: $baseColor_black;
 			}
 
 			h2 {
@@ -355,7 +362,6 @@ p {
 						margin: 0.2rem;
 						text-align: left;
 						font-weight: 200;
-						text-transform: capitalize;
 						font-size: $fontSize_small;
 						font-family: $fontStyle_option2;
 						color: $AdditionalColor-lightGrey;
