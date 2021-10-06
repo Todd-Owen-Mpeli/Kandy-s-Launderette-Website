@@ -52,19 +52,18 @@ p {
 	.header {
 		margin: auto;
 		padding: 1rem;
-		background: $secondary_pink1;
+		background: $backgroundColor_White;
 
 		.nav {
 			margin: auto;
 			padding: 0;
-			// align-items: center;
 
 			.nav_Logo {
 				a {
 					font-weight: 500;
 					word-spacing: 0.25rem;
 					text-decoration: none;
-					color: $AdditionalColor-whiteDouble;
+					color: $baseColor_black;
 					letter-spacing: 0.025rem;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_option3;
@@ -92,7 +91,7 @@ p {
 
 						a {
 							text-decoration: none;
-							color: $AdditionalColor-whiteDouble;
+							color: $baseColor_black;
 							font-size: $fontSize_small;
 							font-family: $fontStyle_body;
 						}
@@ -109,22 +108,23 @@ p {
 
 	/* ===== HERO =====*/
 	.hero {
-		padding-bottom: 5rem;
+		// padding-bottom: 5rem;
 		// background: #7a42fc;
 
 		.content {
-			margin: auto;
-			padding: 1rem;
-			height: 40rem;
+			margin-top: 10rem;
+			padding: 1rem 0 15rem 0;
+			height: fit-content;
+			// border: #7a42fc 0.25rem solid;
 
 			div {
 				margin: auto;
-
-				img {
-					height: auto;
-					width: 350px;
-					max-width: 100%;
-				}
+				padding: 3rem;
+				width: fit-content;
+				height: fit-content;
+				border-radius: 15px;
+				-webkit-backdrop-filter: blur(60px);
+				backdrop-filter: blur(100px);
 
 				h2 {
 					text-align: center;
@@ -313,7 +313,7 @@ p {
 
 /* ===== SCHEDULE BOOKING =====*/
 .scheduleBooking {
-	padding-bottom: 10rem;
+	padding: 3rem 0;
 	background-color: $AdditionalColor-whiteDouble;
 
 	.content {
@@ -450,7 +450,7 @@ p {
 
 		.pricingOption {
 			padding: 1rem;
-			margin-bottom: 2rem;
+			margin-bottom: 3rem;
 
 			h2 {
 				text-align: center;
@@ -841,7 +841,61 @@ p {
 	}
 
 	.contactForm {
-		height: 35rem;
+		padding: 1rem;
+		border: #5d18ff 0.25rem solid;
+
+		.header {
+			padding: 1rem;
+
+			h2 {
+				text-align: center;
+				color: $baseColor_black;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			p {
+				padding: 0.5rem;
+				text-align: center;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_option2;
+				color: $AdditionalColor-lightGrey;
+			}
+		}
+
+		.info {
+			padding: 1rem;
+			border: #ff9900 0.25rem solid;
+
+			h2 {
+				text-align: center;
+				color: $baseColor_black;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			label,
+			td {
+				margin-top: 2rem;
+				text-align: left;
+				font-weight: 200;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_body;
+				color: $baseColor_black;
+			}
+
+			.contact-left {
+				padding: 1rem;
+				border: #ff9900 0.25rem solid;
+			}
+
+			.contact-right {
+				img {
+					border-radius: 15px;
+					width: 100%;
+				}
+			}
+		}
 	}
 
 	@media only screen and (max-width: 767px) {
