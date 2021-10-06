@@ -805,19 +805,7 @@ p {
 
 /* ===== Image Section =====*/
 .contactUs {
-	padding: 1rem;
-
-	.imageOverlay {
-		height: 15rem;
-		img {
-			z-index: 99;
-			width: 100%;
-			bottom: 215px;
-			height: 450px;
-			object-fit: contain;
-			position: relative;
-		}
-	}
+	padding: 4rem;
 
 	.content {
 		padding: 1rem;
@@ -842,9 +830,6 @@ p {
 
 	.contactForm {
 		padding: 1rem;
-		margin-bottom: 3rem;
-		border-radius: 10px;
-		box-shadow: $box-shadow-7;
 
 		.header {
 			padding: 1rem;
@@ -867,6 +852,8 @@ p {
 
 		.info {
 			padding: 1rem;
+			border-radius: 10px;
+			box-shadow: $box-shadow-7;
 
 			h2 {
 				text-align: center;
