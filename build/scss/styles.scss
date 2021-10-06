@@ -799,165 +799,162 @@ p {
 	}
 }
 
-/* ===== Image Section =====*/
+/* ===== CONTACT US =====*/
 .contactUs {
-	padding: 4rem;
+	margin: auto;
+	padding: 2rem;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	background-color: $backgroundColor_White;
 
-	.content {
-		padding: 1rem;
+	.socials {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: fit-content;
+		border-radius: 15px 0 0 15px;
+		background-color: $AdditionalColor-whiteDouble;
+		box-shadow: $box-shadow-7;
 
-		h2 {
-			text-align: center;
-			color: $baseColor_black;
-			font-size: $fontSize_large-1;
-			font-family: $fontStyle_option1;
+		a {
+			padding: 20px;
+			color: $baseColor_lightBlack;
+			font-size: $fontSize_normal;
 		}
 
-		p {
-			margin-top: 1.5rem;
-			text-align: left;
-			font-weight: 200;
-			color: $baseColor_black;
-			text-transform: capitalize;
-			font-size: $fontSize_normal;
-			font-family: $fontStyle_option2;
+		a:hover {
+			transition: all 0.25s ease-in-out;
+			color: $AdditionalColor_Purple1;
 		}
 	}
 
-	.contactForm {
+	.contacBox {
 		padding: 1rem;
+		display: flex;
+		border-radius: 5px;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		box-shadow: $box-shadow-7;
+		background-color: $backgroundColor_lightBlack;
 
-		.header {
+		.c-heading {
 			padding: 1rem;
 
 			h2 {
-				text-align: center;
-				color: $baseColor_black;
+				margin: auto;
+				padding: 1rem;
+				text-align: left;
+				color: $AdditionalColor-whiteDouble;
 				font-size: $fontSize_large-1;
 				font-family: $fontStyle_option1;
 			}
 
 			p {
-				padding: 0.5rem;
 				text-align: center;
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_option2;
+				font-size: $fontSize_small;
+				font-family: $fontStyle_body;
 				color: $AdditionalColor-lightGrey;
 			}
 		}
 
-		.info {
-			padding: 1rem;
-			border-radius: 10px;
-			box-shadow: $box-shadow-7;
+		.c-inputs {
+			form {
+				display: grid;
+				margin: 1rem 0;
+				justify-content: center;
+				align-items: center;
+				grid-template-columns: 1fr;
 
-			h2 {
-				text-align: center;
-				color: $baseColor_black;
-				font-size: $fontSize_large;
-				font-family: $fontStyle_option1;
-			}
-
-			.contact-left {
-				padding: 1rem;
-
-				form {
-					padding: 1rem;
-
-					label,
-					td {
-						text-align: left;
-						font-weight: 200;
-						margin-top: 1.5rem;
-						color: $baseColor_black;
-						font-size: $fontSize_small;
-						font-family: $fontStyle_body;
-					}
-
-					input {
-						padding: 0.5rem;
-						margin-top: 0.25rem;
-						border-radius: 5px;
-						border-style: hidden;
-						color: $baseColor_black;
-						font-size: $fontSize_small;
-						font-family: $fontStyle_option1;
-						border: $baseColor_black 0.15rem solid;
-					}
-
-					::placeholder {
-						font-size: $fontSize_small;
-						color: $AdditionalColor-lightGrey;
-					}
-
-					::-ms-input-placeholder {
-						font-size: $fontSize_small;
-						color: $AdditionalColor-lightGrey;
-					}
-
-					.messageBox {
-						display: grid;
-						grid-template-columns: 1fr;
-
-						label {
-							text-align: left;
-							font-weight: 200;
-							margin-top: 2rem;
-							color: $baseColor_black;
-							font-size: $fontSize_small;
-							font-family: $fontStyle_body;
-						}
-						textarea {
-							padding: 0.5rem;
-							margin-top: 1rem;
-							color: $baseColor_black;
-							font-family: $fontStyle_option1;
-							border: $baseColor_black 0.15rem solid;
-						}
-					}
-
-					button {
-						border: none;
-						margin-top: 2rem;
-						border-radius: 5px;
-						padding: 0.5rem 2rem;
-						letter-spacing: 0.05rem;
-						color: $baseColor_white;
-						font-size: $fontSize_small;
-						font-family: $fontStyle_option1;
-						background: $secondary_pinkRed;
-					}
-
-					button:hover {
-						transition: all 0.25s ease-in-out;
-						background: $AdditionalColor_Purple1;
-					}
-				}
-			}
-
-			.contact-right {
-				padding: 1rem;
-				padding-bottom: 2rem;
-
-				img {
-					width: 100%;
+				input {
+					width: 250px;
+					height: 45px;
+					border: none;
+					outline: none;
+					display: flex;
+					padding: 0.5rem;
 					border-radius: 5px;
+					margin-top: 1rem;
+					box-sizing: border-box;
+					color: $baseColor_black;
+					font-size: $fontSize_small;
+					font-family: $fontStyle_body;
+					background-color: transparent;
+					border: $AdditionalColor-lightGrey 0.15rem solid;
+				}
+
+				input:focus {
+					transition: all 0.25s ease-in-out;
+					border: $AdditionalColor-darkPurple2 0.15rem solid;
+				}
+
+				::placeholder {
+					font-size: $fontSize_small;
+					color: $AdditionalColor-lightGrey;
+				}
+
+				::-ms-input-placeholder {
+					font-size: $fontSize_small;
+					color: $AdditionalColor-lightGrey;
+				}
+
+				textarea {
+					padding: 0.5rem;
+					margin-top: 1rem;
+					border-radius: 5px;
+					box-sizing: border-box;
+					color: $baseColor_black;
+					width: 250px !important;
+					height: 200px !important;
+					font-family: $fontStyle_body;
+					background-color: transparent;
+					border: $AdditionalColor-lightGrey 0.15rem solid;
+				}
+
+				textarea:focus {
+					transition: all 0.25s ease-in-out;
+					border: none;
+					border: $AdditionalColor-darkPurple2 0.15rem solid;
+				}
+
+				button {
+					border: none;
+					outline: none;
+					width: 150px;
+					margin-top: 2rem;
+					font-weight: 300;
+					border-radius: 5px;
+					padding: 0.5rem 2rem;
+					justify-self: center;
+					letter-spacing: 0.05rem;
+					color: $baseColor_white;
+					justify-self: center;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option1;
+					background: $AdditionalColor_Purple1;
+				}
+
+				button:hover {
+					transition: all 0.25s ease-in-out;
+					background: $AdditionalColor-darkPurple2;
+				}
+
+				button:active {
+					transform: scale(1.01);
 				}
 			}
 		}
 	}
 
-	@media only screen and (max-width: 767px) {
-		.content {
-			img {
-				z-index: 99;
-				width: 100%;
-				bottom: 150px;
-				height: 250px;
-				object-fit: contain;
-				position: relative;
-			}
-		}
+	.map {
+		filter: grayscale(0.2);
+		box-shadow: $box-shadow-7;
+		border-radius: 0 5px 5px 0;
+		border: $baseColor_black 0.25rem solid;
+		border-left: none;
 	}
 }
 
