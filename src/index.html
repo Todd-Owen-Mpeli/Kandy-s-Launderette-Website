@@ -422,11 +422,23 @@
 									<div class="contact col">
 										<div>
 											<label>Full-Name</label>
-											<input type="text" placeholder="Name" name="name" />
+											<input
+												type="text"
+												placeholder="Name"
+												id="name"
+												name="name"
+												required
+											/>
 										</div>
 										<div>
 											<label>Phone</label>
-											<input type="text" placeholder="+44" name="phone" />
+											<input
+												type="text"
+												placeholder="+44"
+												id="phone"
+												name="phone"
+												required
+											/>
 										</div>
 									</div>
 									<div class="contact col">
@@ -434,8 +446,10 @@
 											<label>Email</label>
 											<input
 												type="email"
+												id="email"
 												placeholder="Email Address"
 												name="email"
+												required
 											/>
 										</div>
 										<div>
@@ -443,17 +457,24 @@
 											<input
 												type="text"
 												placeholder="Subject"
+												id="subject"
 												class="input-message"
 												name="message"
+												required
 											/>
 										</div>
 									</div>
 									<div class="messageBox">
 										<label>Message</label>
-										<textarea rows="5" placeholder="Message"></textarea>
+										<textarea
+											rows="5"
+											placeholder="Message"
+											id="message"
+											required
+										></textarea>
 									</div>
 									<div>
-										<button type="submit"><strong>Send</strong></button>
+										<button type="submit"><strong>Send Email</strong></button>
 									</div>
 								</form>
 							</div>
