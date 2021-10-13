@@ -1,3 +1,6 @@
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+AOS.init();
+
 /*===== NOTIFICATION DISPLAY =====*/
 function inStoreOptionDisplay() {
 	const showDisplay = document.getElementById("inStoregOption");

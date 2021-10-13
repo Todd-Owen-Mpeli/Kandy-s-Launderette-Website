@@ -29,6 +29,10 @@ img {
 	width: 100%;
 }
 
+ul {
+	list-style-type: none;
+}
+
 a {
 	text-decoration: none;
 }
@@ -50,56 +54,51 @@ p {
 
 	/*===== NAVIGATION MENU =====*/
 	.header {
-		margin: auto;
-		padding: 1rem;
 		background: $backgroundColor_White;
 
 		.nav {
 			margin: auto;
-			padding: 0;
+			display: flex;
+			align-items: center;
 
 			.nav_Logo {
 				a {
-					font-weight: 500;
-					word-spacing: 0.25rem;
 					text-decoration: none;
-					color: $baseColor_black;
-					letter-spacing: 0.025rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_option3;
-				}
+					h2 {
+						color: $baseColor_black;
+						font-size: $fontSize_large;
+						font-family: $fontStyle_option3;
+					}
 
-				a:hover {
-					transition: all 0.25s ease-in-out;
-					color: $baseColor_black;
+					h2:hover {
+						transition: all 0.25s ease-in-out;
+						color: $secondary_pinkRed;
+					}
 				}
 			}
 
 			.nav__menu {
-				ul {
-					margin: auto;
-					justify-content: flex-end;
+				margin: auto;
+				display: flex;
+				align-items: center;
+				justify-content: right;
 
-					li {
-						padding: 0;
-						list-style: none;
-						text-align: center;
+				li {
+					padding: 20px;
 
-						.uil {
-							display: none;
-						}
+					.uil {
+						display: none;
+					}
 
-						a {
-							text-decoration: none;
-							color: $baseColor_black;
-							font-size: $fontSize_small;
-							font-family: $fontStyle_body;
-						}
+					a {
+						text-decoration: none;
+						color: $baseColor_black;
+						font-size: $fontSize_small;
+					}
 
-						a:hover {
-							transition: all 0.25s ease-in-out;
-							color: $baseColor_black;
-						}
+					a:hover {
+						transition: all 0.25s ease-in-out;
+						color: $secondary_pinkRed;
 					}
 				}
 			}
