@@ -16,6 +16,14 @@
 		/>
 		<!-- CSS stylesheet link -->
 		<link rel="stylesheet" href="/src/css/styles.css" />
+		<!-- AOS CDN.js Reveal Animation  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+			integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<!-- Bootstrap CSS -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -42,41 +50,50 @@
 	<body>
 		<!-- ===== MAIN ===== -->
 		<main class="main">
-			<section class="backgroundGradient">
+			<section class="backgroundImage container-fluid">
 				<!--===== HEADER =====-->
-				<header class="header container-fluid" id="header">
+				<header class="header container" id="header">
 					<!-- Navigation Section -->
-					<nav class="nav container row">
+					<nav class="nav row">
 						<div class="nav_Logo col">
+							<a href="/src/index.html"
+								><h2><strong>Kandy's</strong></h2>
+							</a>
+						</div>
+						<ul class="nav__menu col" id="nav-menu">
 							<li>
-								<a href="#header">Kandy's</a>
+								<a href="#Home"><i class="uil uil-browser"></i>Home</a>
 							</li>
-						</div>
-						<div class="nav__menu col" id="nav-menu">
-							<ul class="row">
-								<li class="col">
-									<i class="uil uil-browser"></i><a href="#Home">Home</a>
-								</li>
-								<li class="col">
-									<i class="uil uil-user"></i><a href="#aboutUs">About</a>
-								</li>
-								<li class="col">
-									<i class="uil uil-file-alt"></i
-									><a href="#pricingOption">Services</a>
-								</li>
-								<li class="col">
-									<i class="uil uil-location-arrow"></i
-									><a href="#contactUs">Contact</a>
-								</li>
-							</ul>
-						</div>
+							<li>
+								<a href="#aboutUs"><i class="uil uil-user"></i>About</a>
+							</li>
+							<li>
+								<a href="/src/common/sevices.html"
+									><i class="uil uil-file-alt"></i>Services</a
+								>
+							</li>
+							<li>
+								<a href="#contactUs"
+									><i class="uil uil-location-arrow"></i>Contact</a
+								>
+							</li>
+						</ul>
 					</nav>
 				</header>
 
 				<!--===== HERO =====-->
 				<section class="hero container-fluid" id="hero">
-					<div class="content container">
-						<div>
+					<div
+						class="content container"
+						data-aos="fade-in"
+						data-aos-delay="200"
+						data-aos-duration="1000"
+					>
+						<div
+							data-aos="fade-in"
+							data-aos-delay="200"
+							data-aos-duration="1000"
+						>
 							<h2><strong>Professional Dry Cleaning Services</strong></h2>
 							<p><strong>Best service in Swansea</strong></p>
 						</div>
@@ -86,9 +103,26 @@
 
 			<!--===== ABOUT US =====-->
 			<section class="aboutUs" id="aboutUs">
-				<div class="contentTop container row">
-					<h2 class="title"><strong>A Little bit about us</strong></h2>
-					<div class="col">
+				<div
+					class="contentTop container row"
+					data-aos="fade-in"
+					data-aos-delay="200"
+					data-aos-duration="1000"
+				>
+					<h2
+						class="title"
+						data-aos="fade-up"
+						data-aos-delay="200"
+						data-aos-duration="1000"
+					>
+						<strong>A Little bit about us</strong>
+					</h2>
+					<div
+						class="col"
+						data-aos="fade-up"
+						data-aos-delay="250"
+						data-aos-duration="1000"
+					>
 						<h2>
 							<strong>
 								To Provide On time Delivery & <br />
@@ -105,7 +139,12 @@
 							community the best quality service.
 						</p>
 					</div>
-					<div class="col">
+					<div
+						class="col"
+						data-aos="fade-up"
+						data-aos-delay="250"
+						data-aos-duration="1000"
+					>
 						<img src="/src/img/pexels-sarah-chai-7282372.jpg" alt="" />
 					</div>
 				</div>
@@ -113,15 +152,30 @@
 
 			<!--===== WHY CHOOSE US =====-->
 			<section class="whyChooseUs container" id="whyChooseUs">
-				<div class="contentTop">
-					<div>
+				<div
+					class="contentTop"
+					data-aos="fade-in"
+					data-aos-delay="200"
+					data-aos-duration="1000"
+				>
+					>
+					<div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
 						<h2><strong>Why Choose Us</strong></h2>
 					</div>
-					<div class="diffLine">
+					<div
+						class="diffLine"
+						data-aos="fade-up"
+						data-aos-delay="350"
+						data-aos-duration="1000"
+					>
 						<img src="/src/img/sadada.png" alt="" />
 					</div>
 					<div class="gridContent">
-						<div>
+						<div
+							data-aos="fade-up"
+							data-aos-delay="200"
+							data-aos-duration="1000"
+						>
 							<h2>
 								<strong
 									><i class="fas fa-chess-queen"></i>Personalized
@@ -134,7 +188,11 @@
 								better.
 							</p>
 						</div>
-						<div>
+						<div
+							data-aos="fade-up"
+							data-aos-delay="200"
+							data-aos-duration="1000"
+						>
 							<h2>
 								<strong
 									><i class="fas fa-pound-sign"></i>Affordable Pricing</strong
@@ -145,7 +203,11 @@
 								choosing between 2 types of pricing is available.
 							</p>
 						</div>
-						<div>
+						<div
+							data-aos="fade-up"
+							data-aos-delay="200"
+							data-aos-duration="1000"
+						>
 							<h2>
 								<strong><i class="fas fa-couch"></i>Convenience</strong>
 							</h2>
@@ -154,7 +216,11 @@
 								leisure time to spend with friends and family.
 							</p>
 						</div>
-						<div>
+						<div
+							data-aos="fade-up"
+							data-aos-delay="250"
+							data-aos-duration="1000"
+						>
 							<h2>
 								<strong><i class="fab fa-pagelines"></i>Quality</strong>
 							</h2>
@@ -163,7 +229,11 @@
 								your favorite clothes are always taken care of.
 							</p>
 						</div>
-						<div>
+						<div
+							data-aos="fade-up"
+							data-aos-delay="250"
+							data-aos-duration="1000"
+						>
 							<h2>
 								<strong
 									><i class="fas fa-dolly-flatbed"></i>Express Delivery</strong
@@ -175,7 +245,11 @@
 								delivery.
 							</p>
 						</div>
-						<div>
+						<div
+							data-aos="fade-up"
+							data-aos-delay="250"
+							data-aos-duration="1000"
+						>
 							<h2>
 								<strong><i class="bi bi-tools"></i>Alterations</strong>
 							</h2>
@@ -191,13 +265,29 @@
 
 			<!--===== SCHEDULE BOOKING =====-->
 			<section class="scheduleBooking container-fluid">
-				<div class="content container">
-					<div class="scheduleOption">
+				<div
+					class="content container"
+					data-aos="fade-in"
+					data-aos-delay="200"
+					data-aos-duration="1000"
+				>
+					>
+					<div
+						class="scheduleOption"
+						data-aos="fade-up"
+						data-aos-delay="200"
+						data-aos-duration="1000"
+					>
 						<h2><strong>Schedule your laundry day.</strong></h2>
 					</div>
 					<div class="display">
 						<div class="content row">
-							<div class="col">
+							<div
+								class="col"
+								data-aos="fade-up"
+								data-aos-delay="200"
+								data-aos-duration="1000"
+							>
 								<h2 class="mt-4">
 									<strong>Don't know when your next laundry day is?</strong>
 								</h2>
@@ -223,14 +313,23 @@
 									experience employees. Or contact us email or phone number
 								</p>
 
-								<li>
+								<li
+									data-aos="fade-in"
+									data-aos-delay="600"
+									data-aos-duration="2000"
+								>
 									<a href="#"
 										><strong>Start Now</strong><i class="bi bi-arrow-right"></i
 									></a>
 								</li>
 							</div>
 
-							<div class="col">
+							<div
+								class="col"
+								data-aos="fade-in"
+								data-aos-delay="600"
+								data-aos-duration="1000"
+							>
 								<img
 									class="mt-4"
 									src="/src/img/oli-woodman-nUL_PP69IPA-unsplash.jpg"
@@ -242,269 +341,36 @@
 				</div>
 			</section>
 
-			<!--===== PRICING OPTION =====-->
-			<section class="pricingOption container-fluid" id="pricingOption">
-				<div class="content container">
-					<div class="pricingOption">
-						<h2><strong>Simple pricing for everyone.</strong></h2>
-					</div>
-					<div class="row">
-						<div class="col">
-							<h5>Single</h5>
-							<h2>
-								<strong>£7.99</strong>
-							</h2>
-							<p class="ss">* per use, Save 10% annually</p>
-
-							<p>Up to 20 clothing Alterations</p>
-							<p>1 days Reserve Booking</p>
-							<p>Same Day Delivery</p>
-							<p>Standard Collection</p>
-
-							<button><strong>Getting Started</strong></button>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-							<li>
-								<a href="">Learn more <i class="bi bi-arrow-right"></i></a>
-							</li>
-						</div>
-						<div class="prime col">
-							<h5>Professional</h5>
-							<h2>
-								<strong>£14.99</strong>
-							</h2>
-							<p class="ss">* per use, Save 25% annually</p>
-
-							<p>Up to 100 clothing Alterations</p>
-							<p>1 Week Reserve Booking</p>
-							<p>Same Day Delivery</p>
-							<p>Priority Collection</p>
-
-							<button><strong>Getting Started</strong></button>
-
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-								nihil cumque corporis.
-							</p>
-
-							<li>
-								<a href="">Learn more <i class="bi bi-arrow-right"></i></a>
-							</li>
-						</div>
-						<div class="col">
-							<h5>Premium</h5>
-							<h2>
-								<strong>£24.99</strong>
-							</h2>
-							<p class="ss">* per use, Save 30% annually</p>
-
-							<p>Unlimited clothing Alterations</p>
-							<p>2 Week + Free Reserve Booking</p>
-							<p>Priority Same Day Delivery</p>
-							<p>Priority Collection</p>
-
-							<button><strong>Getting Started</strong></button>
-
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-								nihil cumque corporis atque iste aliquam.
-							</p>
-
-							<li>
-								<a href="">Learn more <i class="bi bi-arrow-right"></i></a>
-							</li>
-						</div>
-					</div>
-					<div class="inStoregOptionBtn">
-						<h2><strong>In Store Options</strong></h2>
-						<button id="inStoregOptionBtn">
-							<i class="bi bi-plus-lg"></i>
-						</button>
-					</div>
-					<div class="inStoregOption" id="inStoregOption">
-						<div class="info row" id="info">
-							<div class="col">
-								<h5>Duvets & Quilts Cleaning</h5>
-								<h2>
-									<strong>£6.60</strong>
-								</h2>
-								<p class="ss">* per pair</p>
-
-								<p>More options available in store.</p>
-
-								<li>
-									<a href="">More Info</a>
-								</li>
-							</div>
-							<div class="col">
-								<h5>Drying Machines</h5>
-								<h2>
-									<strong>£1.80</strong>
-								</h2>
-								<p class="ss">* per use</p>
-
-								<p>More options available in store.</p>
-
-								<li>
-									<a href="">More Info</a>
-								</li>
-							</div>
-							<div class="col">
-								<h5>Washing Machines</h5>
-								<h2>
-									<strong>£3.80</strong>
-								</h2>
-								<p class="ss">* per use</p>
-
-								<p>More options available in store.</p>
-
-								<li>
-									<a href="">More Info</a>
-								</li>
-							</div>
-							<div class="col">
-								<h5>Washing Detergent</h5>
-								<h2>
-									<strong>£1.50</strong>
-								</h2>
-								<p class="ss">* Per bottle, starting from</p>
-
-								<p>More options available in store.</p>
-
-								<li>
-									<a href="">More Info</a>
-								</li>
-							</div>
-							<div class="col">
-								<h5>Professional Ironing</h5>
-								<h2>
-									<strong>£2.50</strong>
-								</h2>
-								<p class="ss">* per session</p>
-
-								<p>More options available in store.</p>
-
-								<li>
-									<a href="">More Info</a>
-								</li>
-							</div>
-							<div class="col">
-								<h5>Stain Removing</h5>
-								<h2>
-									<strong>£5.40</strong>
-								</h2>
-								<p class="ss">* Starting from</p>
-
-								<p>More options available in store.</p>
-
-								<li>
-									<a href="">More Info</a>
-								</li>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!--===== Image Section =====-->
-			<!-- <section class="contactUs container" id="contactUs">
-				<div>
-					<div class="contactForm">
-						<div class="header">
-							<h2><strong>Any Questions? Get In Touch.</strong></h2>
-							<p>We can't wait to hear from you.</p>
-						</div>
-						<div class="info row">
-							<div class="contact-left col">
-								<h2><strong>Email us</strong></h2>
-								<form class="row">
-									<div class="contact col">
-										<div>
-											<label>Full-Name</label>
-											<input
-												type="text"
-												placeholder="Name"
-												id="name"
-												name="name"
-												required
-											/>
-										</div>
-										<div>
-											<label>Phone</label>
-											<input
-												type="text"
-												placeholder="+44"
-												id="phone"
-												name="phone"
-												required
-											/>
-										</div>
-									</div>
-									<div class="contact col">
-										<div>
-											<label>Email</label>
-											<input
-												type="email"
-												id="email"
-												placeholder="Email Address"
-												name="email"
-												required
-											/>
-										</div>
-										<div>
-											<label>Subject</label>
-											<input
-												type="text"
-												placeholder="Subject"
-												id="subject"
-												class="input-message"
-												name="message"
-												required
-											/>
-										</div>
-									</div>
-									<div class="messageBox">
-										<label>Message</label>
-										<textarea
-											rows="5"
-											placeholder="Message"
-											id="message"
-											required
-										></textarea>
-									</div>
-									<div>
-										<button type="submit"><strong>Send Email</strong></button>
-									</div>
-								</form>
-							</div>
-							<div class="contact-right col">
-								<img
-									class="mt-4"
-									src="/src/img/pexels-burst-374074.jpg"
-									alt=""
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-
 			<!--===== CONTACT US =====-->
 			<section class="contactUs container" id="contactUs">
-				<div class="header">
+				<div
+					class="header"
+					data-aos="fade-up"
+					data-aos-delay="200"
+					data-aos-duration="1000"
+				>
 					<h2><strong>Any Questions? Get In Touch.</strong></h2>
 					<p>We can't wait to hear from you.</p>
 				</div>
 				<div class="content">
-					<div class="socials">
+					<div
+						class="socials"
+						data-aos="fade-in"
+						data-aos-delay="200"
+						data-aos-duration="1000"
+					>
 						<a href="#"><i class="bi bi-facebook"></i></a>
 						<a href="#"><i class="bi bi-instagram"></i></a>
 						<a href="#"><i class="bi bi-twitter"></i></a>
 						<a href="#"><i class="bi bi-whatsapp"></i></a>
 						<a href="#"><i class="bi bi-google"></i></a>
 					</div>
-					<div class="contacBox">
+					<div
+						class="contacBox"
+						data-aos="fade-in"
+						data-aos-delay="100"
+						data-aos-duration="1000"
+					>
 						<div class="c-heading">
 							<h2><strong>Email Info</strong></h2>
 							<p>We will respond as quickly as possible.</p>
@@ -535,7 +401,12 @@
 							</form>
 						</div>
 					</div>
-					<div class="map">
+					<div
+						class="map"
+						data-aos="fade-in"
+						data-aos-delay="300"
+						data-aos-duration="1000"
+					>
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.9990980668385!2d-3.9442326842257898!3d51.62322567965436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ef5d2d58eace1%3A0x919fb6f2312ca92b!2sKandys%20Launderette%20%26%20Dry%20Cleaner!5e0!3m2!1sen!2suk!4v1633565891374!5m2!1sen!2suk"
 							width="600"
@@ -682,7 +553,12 @@
 
 		<!--=============== WEBSITE SCRIPTS ====================-->
 		<!--===== SCROLL REVEAL =====-->
-		<script src="https://unpkg.com/scrollreveal"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+			integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 
 		<!--===== MAIN JS =====-->
 		<script src="/src/js/app.js"></script>
