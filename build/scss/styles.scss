@@ -48,13 +48,14 @@ p {
 
 /*===== BACKGROUND GRADIENT SECTION =====*/
 .backgroundImage {
-	background: url(/src/img/alexandra-poliakova-EXCroywwrEw-unsplash.jpg);
+	background: url(/src/img/template98.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 
 	/*===== NAVIGATION MENU =====*/
 	.header {
+		border-radius: 0 0 15px 15px;
 		background: $backgroundColor_White;
 
 		.nav {
@@ -121,8 +122,13 @@ p {
 				width: fit-content;
 				height: fit-content;
 				border-radius: 15px;
-				-webkit-backdrop-filter: blur(60px);
-				backdrop-filter: blur(100px);
+				background: $backgroundGradient;
+				background-size: 1200% 600%;
+				background-position: center;
+				background-repeat: no-repeat;
+				animation: GradientKeyframes 20s ease-in-out infinite;
+				// -webkit-backdrop-filter: blur(60px);
+				// backdrop-filter: blur(100px);
 
 				h2 {
 					text-align: center;
@@ -134,10 +140,10 @@ p {
 					color: $baseColor_white;
 				}
 
-				p {
+				h5 {
 					text-align: center;
 					font-weight: 200;
-					font-size: $fontSize_normal;
+					font-size: $fontSize_large;
 					font-family: $fontStyle_option2;
 					color: $AdditionalColor-whiteDouble;
 				}
@@ -148,20 +154,12 @@ p {
 
 /* ===== ABOUT US =====*/
 .aboutUs {
-	margin: auto;
-	padding: 2rem 0;
-	background: $backgroundGradient;
-	background-size: 1200% 600%;
-	background-position: center;
-	background-repeat: no-repeat;
-	animation: GradientKeyframes 20s ease-in-out infinite;
-
+	padding: 2rem 1rem;
 	.contentTop {
 		margin: auto;
 		object-fit: contain;
 		border-radius: 15px;
 		box-shadow: $box-shadow-7;
-		background-color: $baseColor_white;
 
 		h2 {
 			padding: 1rem;
