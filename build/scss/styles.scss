@@ -147,7 +147,6 @@ p {
 /* ===== ABOUT US =====*/
 .aboutUs {
 	margin: auto;
-	height: 30rem;
 	padding: 2rem 0;
 	background: $backgroundGradient;
 	background-size: 1200% 600%;
@@ -156,10 +155,7 @@ p {
 	animation: GradientKeyframes 20s ease-in-out infinite;
 
 	.contentTop {
-		z-index: 99;
 		margin: auto;
-		bottom: 215px;
-		position: relative;
 		object-fit: contain;
 		border-radius: 15px;
 		box-shadow: $box-shadow-7;
@@ -200,12 +196,6 @@ p {
 				color: $baseColor_black;
 			}
 		}
-	}
-
-	.contentTop:hover {
-		transition: all 0.25s ease-in-out;
-		box-shadow: $box-shadow-8;
-		border: $baseColor_lightBlack 0.25rem solid;
 	}
 
 	@media only screen and (max-width: 767px) {
