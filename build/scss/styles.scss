@@ -68,7 +68,7 @@ p {
 					h2 {
 						color: $baseColor_black;
 						font-size: $fontSize_large;
-						font-family: $fontStyle_option3;
+						font-family: $fontStyle_header;
 					}
 
 					h2:hover {
@@ -95,6 +95,7 @@ p {
 						text-decoration: none;
 						color: $baseColor_black;
 						font-size: $fontSize_small;
+						font-family: $fontStyle_option2;
 					}
 
 					a:hover {

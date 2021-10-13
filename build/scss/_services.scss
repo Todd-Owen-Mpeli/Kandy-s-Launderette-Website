@@ -1,14 +1,14 @@
 /*===== BACKGROUND GRADIENT SECTION =====*/
 .backgroundGradient {
-	background: url(/src/img/alexandra-poliakova-EXCroywwrEw-unsplash.jpg);
-	background-size: cover;
+	background: $backgroundGradient;
+	background-size: 1200% 600%;
 	background-position: center;
 	background-repeat: no-repeat;
+	animation: GradientKeyframes 20s ease-in-out infinite;
 
 	/*===== NAVIGATION MENU =====*/
 	.header {
-		background: $backgroundColor_White;
-
+		padding-bottom: 5rem;
 		.nav {
 			margin: auto;
 			display: flex;
@@ -18,14 +18,14 @@
 				a {
 					text-decoration: none;
 					h2 {
-						color: $baseColor_black;
+						color: $baseColor_white;
 						font-size: $fontSize_large;
-						font-family: $fontStyle_option3;
+						font-family: $fontStyle_header;
 					}
 
 					h2:hover {
 						transition: all 0.25s ease-in-out;
-						color: $secondary_pinkRed;
+						color: $secondary_yellow;
 					}
 				}
 			}
@@ -45,19 +45,21 @@
 
 					a {
 						text-decoration: none;
-						color: $baseColor_black;
+						color: $baseColor_white;
 						font-size: $fontSize_small;
+						font-family: $fontStyle_option2;
 					}
 
 					a:hover {
 						transition: all 0.25s ease-in-out;
-						color: $secondary_pinkRed;
+						color: $secondary_yellow;
 					}
 				}
 			}
 		}
 	}
 }
+
 /* ===== PRICING OPTION  =====*/
 .pricingOption {
 	background-color: $backgroundColor_black;
@@ -312,6 +314,7 @@
 		}
 	}
 }
+
 @media only screen and (max-width: 767px) {
 	.content {
 		.row {
