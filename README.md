@@ -29,9 +29,8 @@ Although the website is fairly functional and provides the minimum viable produc
 
 # Potential Future Features
 1. Develop a reserve services feature. (Example on a specific date & time book a slot for a service.)
-2. Develop a product availability feature (available or sold out). This will then be updated on the website in real time.
+2. Develop a service availability feature (available or not available). This will then be updated on the website in real time.
 3. Re-building the entire website with React and Node.js
-4. Implementing a checkout feature, this will allow users to have their items reserved for a selected period of time. and then be able to drive in-store for collection or pay a shipping fee.
 
 # Deployment
 
