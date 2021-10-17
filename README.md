@@ -12,22 +12,23 @@ To build an online website landing page to display the list of services provided
 Alternatively to bring the dry cleaning store services online for a more cost effective experience. Example reserving specific services ahead of time before traveling to the store.   
 
 # Lessons Learned
-My first services centric website, I really enjoyed the process of integrating a google maps API, while also styling the entire website elements. Specifically the use of .
+My first services centric website, I really enjoyed the process of integrating a google maps API, while also styling the entire website elements.
 
 I Enjoyed learning SASS extension for better CSS styling, file structure and creating specific reusable variables for better optimization. Also using Bootstrap 5 framework for better mobile responsiveness really improved my CSS hard-coding file reduction.
 
-1. Git operations specifically init, add, status, commit, remote, push and pull. Additionally creating a remote repository to learn a better development workflow process.
-2. SCSS File Structure, _font.scss, _color.scss_ etc. Creating seperate SCSS files for different attributes for better CSS opimazation.
-3. Responsive website using Bootstrap 5 class intergration for mobile & tablet view-width breakpoints. 
+1. Javascript HTML DOM functions; Specifically toggling displaying or removing the additional in-store services section. 
+2. Git operations specifically init, add, status, commit, remote, push and pull. Additionally creating a remote repository to learn a better development workflow process.
+3. SCSS File Structure, _font.scss, _color.scss_ etc. Creating seperate SCSS files for different attributes for better CSS opimazation.
+4. Responsive website using Bootstrap 5 class intergration for mobile & tablet view-width breakpoints. 
 
 # Personal Improvements
-Although the website is fairly functional and provides the minimum viable product of displaying the large variety of unique products sold at the store, the current iteration of this project requires a list of improvements.
+Although the website is fairly functional and provides the minimum viable product of displaying the list of services, the current iteration of this project requires a list of improvements.
 
 1. More Team-orientated Git operations specifically branch and merge this will initialize a more realistic team development workflow process.
-2. Javascript functions for more interactive website, specifically HTML DOM element manipulation, displaying or removing items which are avaliable or sold out.
+2. More Javascript functions for more interactive website, specifically HTML DOM element manipulation, displaying or removing items which are avaliable or sold out.
 
 # Potential Future Features
-1. Develop a database with the products information.
+1. Develop a reserve services feature. (Example on a specific date & time book a slot for a service.)
 2. Develop a product availability feature (available or sold out). This will then be updated on the website in real time.
 3. Re-building the entire website with React and Node.js
 4. Implementing a checkout feature, this will allow users to have their items reserved for a selected period of time. and then be able to drive in-store for collection or pay a shipping fee.
