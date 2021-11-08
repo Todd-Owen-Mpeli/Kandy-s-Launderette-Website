@@ -33,4 +33,4 @@ Although the website is fairly functional and provides the minimum viable produc
 3. Re-building the entire website with React and Node.js
 
 # Deployment
-Deployed with GitHub pages. (Near Future)
+Deployed with GitHub pages here: https://todd-owen-mpeli.github.io/Kandy-s-Launderette-Website/
