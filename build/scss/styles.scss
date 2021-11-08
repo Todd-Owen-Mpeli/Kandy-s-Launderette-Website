@@ -114,7 +114,6 @@ p {
 			margin-top: 10rem;
 			padding: 1rem 0 15rem 0;
 			height: fit-content;
-			// border: #7a42fc 0.25rem solid;
 
 			div {
 				margin: auto;
@@ -127,8 +126,6 @@ p {
 				background-position: center;
 				background-repeat: no-repeat;
 				animation: GradientKeyframes 20s ease-in-out infinite;
-				// -webkit-backdrop-filter: blur(60px);
-				// backdrop-filter: blur(100px);
 
 				h2 {
 					text-align: center;
@@ -413,6 +410,7 @@ p {
 					img {
 						border-radius: 15px;
 						width: 100%;
+						object-fit: contain;
 					}
 				}
 			}
@@ -428,12 +426,10 @@ p {
 
 /* ===== CONTACT US =====*/
 .contactUs {
-	// border: #fbb040 0.25rem solid;
 	.header {
 		margin: auto;
 		padding: 1rem 0;
 		margin-top: 1rem;
-		// border: #fbb040 0.25rem solid;
 
 		h2 {
 			margin: auto;
@@ -459,8 +455,6 @@ p {
 		position: relative;
 		align-items: center;
 		justify-content: center;
-		// background-color: $backgroundColor_White;
-		// border: #fbb040 0.25rem solid;
 
 		.socials {
 			display: flex;
