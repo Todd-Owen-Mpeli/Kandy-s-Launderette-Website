@@ -21,7 +21,7 @@ Alternatively to bring the dry-cleaning store services online for a more cost-ef
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<img src="src/img/kandy's%20projects%20pricing%20image.png" width="100%" height="700px">
+<img src="src/img/kandy's%20projects%20pricing%20image.png" width="100%" height="900px">
 
 # Lessons Learned
 My first services centric website, I really enjoyed the process of integrating a google maps API, while also styling the entire website elements.
