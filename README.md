@@ -5,7 +5,7 @@ This is a work-in-progress website I've built for a local Dry-cleaning shop in S
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<img src="src/img/kandy's%20projects%20cover%20image.png" width="100%" height="500px">
+<img src="src/img/kandy's%20projects%20cover%20image.png" width="100%" height="700px">
 
 # Project Context
 Kandy's Launderette is a small Dry-cleaning store providing a multitude of services, Duvets & Quilts Cleaning, Drying & Washing Machines, Washing Detergent, Professional Ironing and Stain Removing. As a dry-cleaning store all its services are all in-store experience however this store doesn't have an online website for its customers.
