@@ -1,7 +1,7 @@
 # Kandy's Launderette online store
 This is a work-in-progress website I've built for a local Dry-cleaning shop in Swansea. It is constructed solely with HTML & SCSS - featuring a google maps API, Bootstrap 5 framework, and a custom Scroll Reveal AOS library.
 
-# Cover Screenshot Section
+# Cover Screenshot
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
@@ -17,7 +17,7 @@ To build an online website landing page to display the list of services provided
 
 Alternatively to bring the dry-cleaning store services online for a more cost-effective experience. Example reserving specific services ahead of time before traveling to the store.
 
-# Pricing Page Screenshot
+# Services Page (Screenshot)
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
