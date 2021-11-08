@@ -15,7 +15,13 @@ Therefore building a online website will provide Kandy's Launderette customers t
 # My Objective
 To build an online website landing page to display the list of services provided by Kandy's Launderette. Listing these services will provide customers the opportunity to see the value of the store without having to contact the store.
 
-Alternatively to bring the dry-cleaning store services online for a more cost-effective experience. Example reserving specific services ahead of time before traveling to the store.   
+Alternatively to bring the dry-cleaning store services online for a more cost-effective experience. Example reserving specific services ahead of time before traveling to the store.
+
+# Pricing Page Screenshot
+
+1. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="src/img/kandy's%20projects%20pricing%20image.png" width="100%" height="700px">
 
 # Lessons Learned
 My first services centric website, I really enjoyed the process of integrating a google maps API, while also styling the entire website elements.
