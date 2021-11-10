@@ -39,6 +39,13 @@ Although the website is fairly functional and provides the minimum viable produc
 1. More Team-orientated Git operations specifically branch and merge this will initialize a more realistic team development workflow process.
 2. More JavaScript functions for more interactive website, specifically HTML DOM element manipulation, displaying or removing items which are available or sold out.
 
+# Mobile View Screenshot
+
+1. Mobile view side by side of the landing page (Full page).
+2. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="src/img/Mobile%20View%20Screenshot.png" width="100%" height="750px">
+
 # Potential Future Features
 1. Develop a reserve services feature. (Example on a specific date & time book a slot for a service.)
 2. Develop a service availability feature (available or not available). This will then be updated on the website in real time.
