@@ -1,6 +1,9 @@
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 AOS.init();
 
+const backgroundDisplay = document.getElementById("backgroundDisplay");
+// backgroundDisplay.style.backgroundImage = "../img/BackgroundImage.jpg";
+
 /*===== NOTIFICATION DISPLAY =====*/
 function inStoreOptionDisplay() {
 	const showDisplay = document.getElementById("inStoregOption");
