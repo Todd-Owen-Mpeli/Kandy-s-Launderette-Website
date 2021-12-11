@@ -1,5 +1,5 @@
 # Kandy's Launderette online store
-This is a work-in-progress website I've built for a local Dry-cleaning shop in Swansea. It is constructed solely with HTML & SCSS - featuring a google maps API, Bootstrap 5 framework, and a custom Scroll Reveal AOS library.
+This is a client-side rendering project specifically build as a minimun viable product project. It is a version 1 website I have built for a local Dry-cleaning shop in Swansea. It is constructed solely with HTML & SCSS - featuring a google maps API, Bootstrap 5 framework, and a custom Scroll Reveal AOS library.
 
 # Cover Screenshot
 
